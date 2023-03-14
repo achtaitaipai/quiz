@@ -1,0 +1,320 @@
+/* RESET https://andy-bell.co.uk/a-modern-css-reset/ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* GLOBAL */
+
+:root {
+  /* colors */
+  --color-dark: #121210;
+  --color-darkish: #50514f;
+  --color-light: #f8fafb;
+  --color-lightish: #e9ecef;
+  --color-primary: #d9480f;
+  /* fonts */
+  --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif;
+  --font-serif: Georgia, ui-serif, serif;
+  /* sizes */
+  --size--2: clamp(0.63rem, calc(0.64rem + -0.01vw), 0.64rem);
+  --size--1: clamp(0.8rem, calc(0.78rem + 0.08vw), 0.84rem);
+  --size-0: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+  --size-1: clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);
+  --size-2: clamp(1.56rem, calc(1.41rem + 0.76vw), 2rem);
+  --size-3: clamp(1.95rem, calc(1.71rem + 1.24vw), 2.66rem);
+  --size-4: clamp(2.44rem, calc(2.05rem + 1.93vw), 3.55rem);
+  --size-5: clamp(3.05rem, calc(2.47rem + 2.93vw), 4.74rem);
+  --main-width: clamp(20rem, 80vw, 75ch);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--size-3);
+  background: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-sans);
+  line-height: 1.7;
+}
+
+header,
+footer {
+  width: 100%;
+  background-color: var(--color-lightish);
+  flex-grow: 0;
+}
+main {
+  flex-grow: 1;
+}
+
+:where(h1, h2, h3) {
+  --flow-space: 1.5rem;
+  line-height: 1.1;
+  font-weight: 800;
+  font-family: var(--font-serif);
+}
+
+:where(h1, h2, h, legend) + * {
+  --flow-space: 0.5em;
+}
+
+h1 {
+  font-size: var(--size-4);
+}
+
+h2 {
+  font-size: var(--size-3);
+}
+
+h3 {
+  font-size: var(--size-2);
+}
+
+h1 {
+  max-inline-size: 20ch;
+}
+
+h2,
+h3 {
+  max-inline-size: 28ch;
+}
+
+form {
+  max-inline-size: 65ch;
+}
+
+fieldset {
+  border-color: var(--color-darkish);
+}
+
+legend {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5em;
+  padding: 0;
+}
+
+/* BLOCKS */
+
+input:where([type="radio"], [type="checkbox"]) {
+  display: none;
+}
+
+input:where([type="radio"], [type="checkbox"]) ~ label {
+  display: block;
+  cursor: pointer;
+}
+
+input:where([type="radio"], [type="checkbox"]) ~ label::before {
+  content: "✓";
+  float: left;
+  display: grid;
+  place-items: center;
+  margin-right: var(--size--2);
+  line-height: 0;
+  background-color: var(--color-light);
+  width: var(--size-1);
+  height: var(--size-1);
+  margin-block-start: -2px;
+  font-size: var(--size-0);
+  border: 1px solid var(--color-darkish);
+  color: transparent;
+  translate: 0 0.25em;
+}
+
+input:where([type="radio"], [type="checkbox"])
+  ~ label:where(:hover, :focus-within)::before {
+  border-color: var(--color-dark);
+  background-color: var(--color-lightish);
+}
+
+input:where([type="radio"], [type="checkbox"]):checked ~ label::before {
+  color: var(--color-dark);
+  animation: scale-up 0.3s;
+}
+
+form {
+  counter-reset: answer;
+}
+
+fieldset {
+  counter-increment: answer;
+  border: 0;
+}
+
+legend::before {
+  content: counter(answer) ". ";
+}
+
+.reel {
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.reel > * {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.slider {
+  position: relative;
+  padding-inline: var(--size-2);
+}
+
+.slider_nav {
+  font-size: var(--size-1);
+  position: absolute;
+  display: none;
+  top: 50%;
+  translate: 0 -50%;
+  left: calc(-0.5 * (var(--size-2) + var(--size--1)));
+  width: calc(100% + (var(--size-2) + var(--size--1)));
+  pointer-events: none;
+}
+
+.slider_item {
+  display: grid;
+  align-content: center;
+}
+
+.slider_item:where(:target, :first-of-type) nav {
+  display: flex;
+}
+
+.slider_nav a {
+  display: grid;
+  place-items: center;
+  background-color: var(--color-light);
+  border: 1px solid var(--color-lightish);
+  stroke: var(--color-darkish);
+  pointer-events: all;
+  padding: var(--size--2);
+  border-radius: var(--size-2);
+}
+
+.slider_nav a:hover {
+  animation: scale-up 0.3s linear;
+}
+
+.slider_nav svg {
+  height: 1em;
+  width: 1em;
+}
+
+.slider [title="suivant"] {
+  margin-left: auto;
+  text-align: right;
+}
+
+/* UTILITIES */
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+[class~="center"],
+[class*="center\:"] {
+  max-inline-size: var(--main-width);
+  margin-inline: auto;
+  padding-inline: var(--size--1);
+}
+
+[class~="center\:vertical"] {
+  display: grid;
+  align-content: center;
+}
+
+.prose {
+  font-size: var(--size-2);
+  max-inline-size: 50ch;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* ANIMATIONS */
+
+@keyframes scale-up {
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
