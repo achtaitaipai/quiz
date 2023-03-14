@@ -1,57 +1,20 @@
+import { Slider } from "./scripts/Slider";
 import "./style.css";
 
-class Quizz extends HTMLFormElement {
-  private _items: HTMLElement[] =[]
-  private _previousLink: HTMLAnchorElement | null = null;
-  private _nextLink: HTMLAnchorElement | null = null;
-  private _currentFrame = 0;
+customElements.define("slider-element", Slider);
 
-  constructor() {
-    super();
-  }
+const form = document.querySelector("form");
+const slider = document.querySelector<Slider>("slider-element");
 
-  connectedCallback() {
-    this.setAttribute("data-js", "");
-    this._items = Array.from(
-      this.querySelectorAll<HTMLElement>(".slider_item")
-    );
-    this._previousLink = this.querySelector<HTMLAnchorElement>(
-      '[title="précédent"]'
-    );
-    this._nextLink = this.querySelector<HTMLAnchorElement>('[title="suivant"]');
-    
-    this._nextLink?.addEventListener('click',this._nextFrame)
-    this._previousLink?.addEventListener('click',this._previousFrame)
-    this._setLinks()
-  }
-
-  disconnectedCallback(){
-    this._nextLink?.removeEventListener('click',this._nextFrame)
-    this._previousLink?.removeEventListener('click',this._previousFrame)
-  }
-
-  private _nextFrame = (e:MouseEvent) => {
-    e.preventDefault()
-    this._currentFrame++
-    this._setLinks()
-    this._items[this._currentFrame]?.scrollIntoView()
-  }
-
-  private _previousFrame = (e:MouseEvent)=>{
-    e.preventDefault()
-    this._currentFrame--
-    this._setLinks()
-    this._items[this._currentFrame]?.scrollIntoView()
-  }
-
-  private _setLinks(){
-    const next = this._items[this._currentFrame+1]?.id 
-    const previous = this._items[this._currentFrame-1]?.id
-
-    this._nextLink?.setAttribute('href',`#${next}`)
-    this._previousLink?.setAttribute('href',`#${previous}`)
-
-  }
-}
-
-customElements.define("quizz-component", Quizz, { extends: "form" });
+const fieldsets = document.querySelectorAll("fieldset");
+fieldsets.forEach((el, i) => {
+  el.addEventListener("change", (e) => {
+    if (i < fieldsets.length - 1) slider?.goTo(i + 1);
+    else {
+      const formData = new FormData(form!);
+      formData.forEach(el=>{
+        console.log(el)
+      })
+    }
+  });
+});
