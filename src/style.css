@@ -1,92 +1,12 @@
 /* RESET https://andy-bell.co.uk/a-modern-css-reset/ */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@import url("styles/global/reset.css");
+@import url("styles/global/variables.css");
+@import url("styles/global/animations.css");
+@import url("styles/blocks/slider.css");
 
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-}
-
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
 
 /* GLOBAL */
-
-:root {
-  /* colors */
-  --color-dark: #121210;
-  --color-darkish: #50514f;
-  --color-light: #f8fafb;
-  --color-lightish: #e9ecef;
-  --color-primary: #d9480f;
-  /* fonts */
-  --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-    Noto Sans, sans-serif;
-  --font-serif: Georgia, ui-serif, serif;
-  /* sizes */
-  --size--2: clamp(0.63rem, calc(0.64rem + -0.01vw), 0.64rem);
-  --size--1: clamp(0.8rem, calc(0.78rem + 0.08vw), 0.84rem);
-  --size-0: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
-  --size-1: clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);
-  --size-2: clamp(1.56rem, calc(1.41rem + 0.76vw), 2rem);
-  --size-3: clamp(1.95rem, calc(1.71rem + 1.24vw), 2.66rem);
-  --size-4: clamp(2.44rem, calc(2.05rem + 1.93vw), 3.55rem);
-  --size-5: clamp(3.05rem, calc(2.47rem + 2.93vw), 4.74rem);
-  --main-width: clamp(20rem, 80vw, 75ch);
-}
 
 body {
   display: flex;
@@ -156,8 +76,6 @@ legend {
   padding: 0;
 }
 
-/* BLOCKS */
-
 input:where([type="radio"], [type="checkbox"]) {
   display: none;
 }
@@ -208,69 +126,6 @@ legend::before {
   content: counter(answer) ". ";
 }
 
-.reel {
-  display: flex;
-  overflow: hidden;
-  padding: 0;
-  scroll-behavior: smooth;
-}
-
-.reel > * {
-  flex-basis: 100%;
-  flex-shrink: 0;
-  margin: 0;
-}
-
-.slider {
-  position: relative;
-  padding-inline: var(--size-2);
-}
-
-.slider_nav {
-  font-size: var(--size-1);
-  position: absolute;
-  display: none;
-  top: 50%;
-  translate: 0 -50%;
-  left: calc(-0.5 * (var(--size-2) + var(--size--1)));
-  width: calc(100% + (var(--size-2) + var(--size--1)));
-  pointer-events: none;
-}
-
-.slider_item {
-  display: grid;
-  align-content: center;
-}
-
-.slider_item:where(:target, :first-of-type) nav {
-  display: flex;
-}
-
-.slider_nav a {
-  display: grid;
-  place-items: center;
-  background-color: var(--color-light);
-  border: 1px solid var(--color-lightish);
-  stroke: var(--color-darkish);
-  pointer-events: all;
-  padding: var(--size--2);
-  border-radius: var(--size-2);
-}
-
-.slider_nav a:hover {
-  animation: scale-up 0.3s linear;
-}
-
-.slider_nav svg {
-  height: 1em;
-  width: 1em;
-}
-
-.slider [title="suivant"] {
-  margin-left: auto;
-  text-align: right;
-}
-
 /* UTILITIES */
 
 .flow > * + * {
@@ -308,13 +163,4 @@ legend::before {
   border: 0 !important;
 }
 
-/* ANIMATIONS */
 
-@keyframes scale-up {
-  80% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}

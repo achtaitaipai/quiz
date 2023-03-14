@@ -1,0 +1,23 @@
+
+:root {
+    /* colors */
+    --color-dark: #121210;
+    --color-darkish: #50514f;
+    --color-light: #f8fafb;
+    --color-lightish: #e9ecef;
+    --color-primary: #d9480f;
+    /* fonts */
+    --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+      Noto Sans, sans-serif;
+    --font-serif: Georgia, ui-serif, serif;
+    /* sizes */
+    --size--2: clamp(0.63rem, calc(0.64rem + -0.01vw), 0.64rem);
+    --size--1: clamp(0.8rem, calc(0.78rem + 0.08vw), 0.84rem);
+    --size-0: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+    --size-1: clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);
+    --size-2: clamp(1.56rem, calc(1.41rem + 0.76vw), 2rem);
+    --size-3: clamp(1.95rem, calc(1.71rem + 1.24vw), 2.66rem);
+    --size-4: clamp(2.44rem, calc(2.05rem + 1.93vw), 3.55rem);
+    --size-5: clamp(3.05rem, calc(2.47rem + 2.93vw), 4.74rem);
+    --main-width: clamp(20rem, 80vw, 75ch);
+  }
