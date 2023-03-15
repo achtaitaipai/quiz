@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import { Slider } from "./scripts/Slider";
 import "./style.css";
 
@@ -16,6 +17,15 @@ fieldsets.forEach((el, i) => {
   });
 });
 
+const [params] = location.href.match(/(?<=\?).+/) ?? [""];
+console.log(params);
+const searchParams = new URLSearchParams(
+  "?color=orange&number=1&ville=B%C3%A9thune"
+);
+console.log(searchParams.get("ville"));
+for (const p of searchParams) {
+  console.log(p);
+}
 // form?.addEventListener("submit", (e) => {
 //   e.preventDefault();
 //   const formData = new FormData(form!);
