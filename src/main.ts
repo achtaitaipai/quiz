@@ -8,13 +8,18 @@ const slider = document.querySelector<Slider>("slider-element");
 
 const fieldsets = document.querySelectorAll("fieldset");
 fieldsets.forEach((el, i) => {
-  el.addEventListener("change", (e) => {
+  el.addEventListener("change", () => {
     if (i < fieldsets.length - 1) slider?.goTo(i + 1);
     else {
-      const formData = new FormData(form!);
-      formData.forEach(el=>{
-        console.log(el)
-      })
+      form?.submit();
     }
   });
 });
+
+// form?.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   const formData = new FormData(form!);
+//   formData.forEach((el) => {
+//     console.log(el);
+//   });
+// });

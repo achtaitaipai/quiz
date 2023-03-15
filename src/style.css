@@ -3,8 +3,7 @@
 @import url("styles/global/reset.css");
 @import url("styles/global/variables.css");
 @import url("styles/global/animations.css");
-@import url("styles/blocks/slider.css");
-
+@import url("styles/blocks/form.css");
 
 /* GLOBAL */
 
@@ -60,72 +59,6 @@ h3 {
   max-inline-size: 28ch;
 }
 
-form {
-  max-inline-size: 65ch;
-}
-
-fieldset {
-  border-color: var(--color-darkish);
-}
-
-legend {
-  float: left;
-  width: 100%;
-  display: block;
-  margin-bottom: 0.5em;
-  padding: 0;
-}
-
-input:where([type="radio"], [type="checkbox"]) {
-  display: none;
-}
-
-input:where([type="radio"], [type="checkbox"]) ~ label {
-  display: block;
-  cursor: pointer;
-}
-
-input:where([type="radio"], [type="checkbox"]) ~ label::before {
-  content: "✓";
-  float: left;
-  display: grid;
-  place-items: center;
-  margin-right: var(--size--2);
-  line-height: 0;
-  background-color: var(--color-light);
-  width: var(--size-1);
-  height: var(--size-1);
-  margin-block-start: -2px;
-  font-size: var(--size-0);
-  border: 1px solid var(--color-darkish);
-  color: transparent;
-  translate: 0 0.25em;
-}
-
-input:where([type="radio"], [type="checkbox"])
-  ~ label:where(:hover, :focus-within)::before {
-  border-color: var(--color-dark);
-  background-color: var(--color-lightish);
-  animation: scale-up 0.3s;
-}
-
-input:where([type="radio"], [type="checkbox"]):checked ~ label::before {
-  color: var(--color-dark);
-}
-
-form {
-  counter-reset: answer;
-}
-
-fieldset {
-  counter-increment: answer;
-  border: 0;
-}
-
-legend::before {
-  content: counter(answer) ". ";
-}
-
 /* UTILITIES */
 
 .flow > * + * {
@@ -162,5 +95,3 @@ legend::before {
   white-space: nowrap !important;
   border: 0 !important;
 }
-
-
