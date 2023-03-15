@@ -1,4 +1,3 @@
-import { url } from "inspector";
 import { Slider } from "./scripts/Slider";
 import "./style.css";
 
@@ -12,24 +11,14 @@ fieldsets.forEach((el, i) => {
   el.addEventListener("change", () => {
     if (i < fieldsets.length - 1) slider?.goTo(i + 1);
     else {
-      form?.submit();
+      if (!form) throw new Error("Form not found on document");
+      const formData = Object.fromEntries(new FormData(form));
+      const values = [...Object.values(formData)];
+      const keys = [...new Set(values)].map(
+        (k) => [k, values.filter((v) => v === k).length] as [string, number]
+      );
+      const sorted = keys.sort((a, b) => b[1] - a[1]);
+      console.log(sorted[0][0]);
     }
   });
 });
-
-const [params] = location.href.match(/(?<=\?).+/) ?? [""];
-console.log(params);
-const searchParams = new URLSearchParams(
-  "?color=orange&number=1&ville=B%C3%A9thune"
-);
-console.log(searchParams.get("ville"));
-for (const p of searchParams) {
-  console.log(p);
-}
-// form?.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   const formData = new FormData(form!);
-//   formData.forEach((el) => {
-//     console.log(el);
-//   });
-// });

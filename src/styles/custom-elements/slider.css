@@ -3,6 +3,7 @@
   display: block;
   border: 2px solid var(--color-lightish);
 }
+
 .slidesWrapper {
   display: grid;
   grid-auto-flow: column;

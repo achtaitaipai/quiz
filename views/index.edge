@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quizz</title>
+</head>
+
+<body>
+  <header>header</header>
+  <main class="center:vertical flow">
+    <form action="" method="get">
+      <slider-element>
+
+        @each((entrie,entrieIndex) in entries)
+        <fieldset class="[ slider_item ] [ flow ]">
+          <legend class="prose">
+            {{entrie.question}}
+          </legend>
+          @each((answer, index) in entrie.answers)
+          <div class="form-group">
+            @set('id',entrieIndex+'-'+index)
+            <input type="radio" name="{{entrieIndex}}" id="{{id}}" value="{{answer.value}}" required /><label
+              tabindex="0" for="{{id}}">{{answer.text}}</label>
+          </div>
+          @end
+        </fieldset>
+        @end
+
+      </slider-element>
+      <input type="submit" value="Alors ?" />
+    </form>
+  </main>
+  <footer>footer</footer>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

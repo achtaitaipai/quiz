@@ -32,7 +32,8 @@ input:where([type="radio"], [type="checkbox"]) {
 }
 
 input:where([type="radio"], [type="checkbox"]) ~ label {
-  display: block;
+  display: flex;
+  align-items:center;
   cursor: pointer;
 }
 
