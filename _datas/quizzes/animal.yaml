@@ -17,6 +17,41 @@ questions:
       - Je me rendors.
       - Je vérifie mon téléphone.
       - Je mange
+  - question: Est-ce que vous êtes plutôt...
+    options:
+      - du matin ?
+      - de l'après-midi ?
+      - de la nuit ?
+  - question: Face à un problème quelle est votre réaction ?
+    options:
+      - Manger tout ce qui traine.
+      - Trouver une solution.
+      - Partir en courant.
+  - question: Que préférez vous faire le 31 décembre ?
+    options:
+      - "Un bon dîner : huître, champagne..."
+      - Cinq flasques de William-Peel et c'est partit pour la nuit.
+      - Ça dépend.
+  - question: Quelles fleurs préférez vous ?
+    options:
+      - Les crysanthèmes.
+      - Les roses Trèmières.
+      - Celles qui croisent votre chemin.
+  - question: Pour vous dormir...
+    options:
+      - c'est le meilleur moment de la journée.
+      - une perte de temps.
+      - une nécessité.
+  - question: "À votre avis si les poules avaient des dents... "
+    options:
+      - elles mangeraient du poulet.
+      - elles auraient besoin d'un dentiste.
+      - Paris serait dans une bouteille.
+  - question: Être bizarre c'est...
+    options:
+      - normal.
+      - bizarre.
+      - "effarent. "
 results:
   - title: blatte
     result: >-
@@ -60,8 +95,8 @@ results:
     image: /images/uploads/cafard.jpg
     lead: Vous êtes une blatte.
   - title: blobfish
-    result: "Vous êtes un **blobfish** ! Bien que souvent considéré comme l'un
-      des animaux les plus moches du monde, le blobfish est en réalité un animal
+    result: "Vous êtes un **blobfish** ! Bien que souvent considéré comme l'un des
+      animaux les plus moches du monde, le blobfish est en réalité un animal
       fascinant avec des qualités uniques. Voici quelques-unes des
       caractéristiques qui décrivent le mieux votre personnalité :\r
 
@@ -130,10 +165,10 @@ results:
     image: /images/uploads/blobfish.jpg
     lead: Vous êtes un blobfish.
   - title: chevre
-    result: "Vous êtes une **chèvre** ! Bien que souvent considérée comme un
-      animal rustique et malodorant, la chèvre est en réalité un animal
-      fascinant avec des qualités uniques. Voici quelques-unes des
-      caractéristiques qui décrivent le mieux votre personnalité :\r
+    result: "Vous êtes une **chèvre** ! Bien que souvent considérée comme un animal
+      rustique et malodorant, la chèvre est en réalité un animal fascinant avec
+      des qualités uniques. Voici quelques-unes des caractéristiques qui
+      décrivent le mieux votre personnalité :\r
 
       \r
 

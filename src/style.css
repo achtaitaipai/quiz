@@ -110,6 +110,12 @@ article {
   place-items: center;
 }
 
+@supports (height: 100dvh) {
+  .cover {
+    height: calc(100vh - var(--header-height));
+  }
+}
+
 .cover h1 {
   z-index: 1;
   font-size: var(--size-5);
@@ -139,10 +145,31 @@ article {
   align-content: center;
 }
 
+.align-center {
+  text-align: center;
+}
+
 .lead {
   font-size: var(--size-2);
   font-weight: 700;
   line-height: 1.2;
+}
+.slide-in {
+  overflow: hidden;
+}
+
+.slide-in > * {
+  display: block;
+  animation: slide-in-up 0.3s both;
+  line-height: 1.7;
+}
+
+.fade-in {
+  animation: fade-in 0.3s ease-in both;
+}
+
+.animation-delay {
+  animation-delay: 0.5;
 }
 
 .sr-only {

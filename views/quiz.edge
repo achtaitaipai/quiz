@@ -2,8 +2,8 @@
 
 @section('body')
 <main class="center:vertical">
-<h1 class="center">{{title}}</h1>
-  <form class="center" action="{{defaultResult}}" method="post" is="quiz-element" autocomplete="off" data-results="{{JSON.stringify(results)}}">
+<h1 class="center align-center fade-in"><span>{{title}}</span></h1>
+  <form class="center fade-in" action="{{defaultResult}}" method="post" is="quiz-element" autocomplete="off" data-results="{{JSON.stringify(results)}}">
       @each((question,questionIndex) in questions)
         <fieldset class="[ slider_item ] [ flow ]" data-slide>
           <legend class="lead center">
