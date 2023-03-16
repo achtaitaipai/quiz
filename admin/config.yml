@@ -15,6 +15,7 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
         - {name: "title", label: "Titre", widget: "string", pattern: ["^[a-z0-9]{4,10}$","déso mais pas d'espace, ni de caractère spécial, ni de majuscule."]}
+        - {name: "lead", label: "En tête", widget: "string"}
         - {name: "description", label: "Description", widget: "text"}
         - {name: "questions", label: "Questions", widget: "list", fields: [
             {name: "question", label: "Question", widget: "string"},
