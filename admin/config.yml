@@ -1,0 +1,30 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+local_backend: true
+slug:
+  clean_accents: true
+media_folder: "public/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  - name: "quizzes" # Used in routes, e.g., /admin/collections/blog
+    extension: yaml
+    label: "Quiz" # Used in the UI
+    folder: "_datas/quizzes" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields:
+        - {name: "title", label: "Titre", widget: "string", pattern: ["^[a-z0-9]{4,10}$","déso mais pas d'espace, ni de caractère spécial, ni de majuscule."]}
+        - {name: "description", label: "Description", widget: "text"}
+        - {name: "questions", label: "Questions", widget: "list", fields: [
+            {name: "question", label: "Question", widget: "string"},
+            {name: "options", label: "Options", widget: "list", field:
+              {name: "option", label: "option", widget: "string"},
+            }
+          ]}
+        - {name: "results", label: "Résultats", widget: "list", fields: [
+            {name: "title", label: "Titre", widget: "string", pattern: ["^[a-z0-9]{4,10}$","déso mais pas d'espace, ni de caractère spécial, ni de majuscule."]},
+            {name: "lead", label: "En tête", widget: "string"},
+            {name: "image", label: "Image",choose_url: false, widget: "image"},
+            {name: "result", label: "Résultat", widget: "markdown"},
+          ]}
