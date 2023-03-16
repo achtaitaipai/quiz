@@ -33,7 +33,7 @@ input:where([type="radio"], [type="checkbox"]) {
 
 input:where([type="radio"], [type="checkbox"]) ~ label {
   display: flex;
-  align-items:center;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -63,8 +63,4 @@ input:where([type="radio"], [type="checkbox"]) ~ label::before {
 
 input:where([type="radio"], [type="checkbox"]):checked ~ label::before {
   color: var(--color-dark);
-}
-
-slider-element[data-active] + input[type="submit"] {
-  display: none;
 }

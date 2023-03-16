@@ -10,7 +10,6 @@
 body {
   display: flex;
   flex-direction: column;
-  row-gap: var(--size-3);
   background: var(--color-light);
   color: var(--color-dark);
   font-family: var(--font-sans);

@@ -1,7 +1,6 @@
-
 import { defineConfig } from "vite";
 import { dedale } from "vite-plugin-dedale";
-import { routes } from "./ssg/routes";
+import { routes, base } from "./ssg/routes/index";
 
 export default defineConfig({
   plugins: [
@@ -12,7 +11,8 @@ export default defineConfig({
       configureTemplateEngine: (env) => {
         return env;
       },
-      routes: routes,
+      routes: routes(),
     }),
   ],
+  base,
 });

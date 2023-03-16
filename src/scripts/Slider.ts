@@ -4,14 +4,16 @@ export class Slider extends HTMLElement {
   private _items: HTMLElement[] = [];
   private _progressBar: HTMLProgressElement | null = null;
   private _slidesWrapper: HTMLDivElement | null = null;
-  private _currentFrame = 0;
+  public currentFrame = 0;
 
   connectedCallback() {
     const template = this._createTemplate();
     this.attachShadow({ mode: "open" });
     this.shadowRoot?.appendChild(template);
 
-    this._items = Array.from(this.children) as HTMLElement[];
+    this._items = Array.from(this.children).filter((itm) =>
+      itm.hasAttribute("data-slide")
+    ) as HTMLElement[];
     const observer = this._createItemsObserver();
     this._items.forEach((item) => observer.observe(item));
     this._update();
@@ -43,7 +45,7 @@ export class Slider extends HTMLElement {
         elements.forEach(({ intersectionRatio, target }) => {
           if (intersectionRatio > 0.5) {
             const index = this._items.findIndex((itm) => itm === target);
-            this._currentFrame = index;
+            this.currentFrame = index;
             this._update();
           }
         });
@@ -55,19 +57,22 @@ export class Slider extends HTMLElement {
   }
 
   goTo(frame: number) {
-    this._currentFrame = Math.max(0, Math.min(this._items.length, frame));
-    const currentElement = this._items[this._currentFrame];
+    this.currentFrame = Math.max(0, Math.min(this._items.length - 1, frame));
+    const currentElement = this._items[this.currentFrame];
     currentElement.scrollIntoView();
     this._update();
-    currentElement.focus();
+    return this.currentFrame;
   }
 
   private _update() {
     this._items.forEach((item, i) => {
-      const isCurrent = i === this._currentFrame;
+      const isCurrent = i === this.currentFrame;
       item.ariaHidden = (!isCurrent).toString();
     });
     this._progressBar?.setAttribute("max", (this._items.length - 1).toString());
-    this._progressBar?.setAttribute("value", this._currentFrame.toString());
+    this._progressBar?.setAttribute("value", this.currentFrame.toString());
   }
 }
+
+export const defineSliderElement = () =>
+  customElements.define("slider-element", Slider);

@@ -1,0 +1,209 @@
+title: animal
+description: Au fond de chacun d'entre nous réside un animal. Découvrez quel est le vôtre !
+questions:
+  - question: Quelle est votre activité préférée le week-end ?
+    options:
+      - Sortir en ville avec des amis.
+      - Explorer la nature.
+      - Rester chez soit et se détendre.
+  - question: Quel est votre plat préféré ?
+    options:
+      - Pizza
+      - Fruits de mer
+      - le Welsh
+  - question: Quelle est la première chose que vous faites au réveil ?
+    options:
+      - Je me rendors.
+      - Je vérifie mon téléphone.
+      - Je mange
+results:
+  - title: blatte
+    result: >-
+      Vous êtes une **blatte** ! Contrairement à ce que beaucoup de gens peuvent
+      penser, les blattes sont en fait des insectes très intéressants et
+      fascinants. Voici quelques-unes des caractéristiques qui décrivent le
+      mieux votre personnalité :
+
+
+      ## Adaptabilité
+
+
+      Tout comme les blattes, vous êtes très adaptable et pouvez facilement vous adapter à différents environnements et situations. Les blattes ont été trouvées dans presque tous les habitats de la planète, des forêts tropicales aux déserts arides. De la même manière, vous êtes capable de vous adapter à différentes cultures et à différents styles de vie.
+
+
+      ## Résilience
+
+
+      Les blattes sont également très résilientes et peuvent survivre à des conditions difficiles. Elles peuvent rester sans nourriture ni eau pendant des semaines, et certaines espèces peuvent même survivre à des doses élevées de radiations. De la même manière, vous avez la capacité de surmonter des défis difficiles et de vous relever face à l'adversité.
+
+
+      ## Défense
+
+
+      Bien que vous préfériez éviter les conflits, vous êtes capable de vous défendre lorsque vous êtes menacé. Les blattes ont une grande capacité à éviter les prédateurs, mais lorsqu'elles sont confrontées à un danger, elles peuvent être très agressives. Vous avez peut-être un tempérament pacifique, mais vous êtes également capable de vous défendre avec force lorsque vous en avez besoin.
+
+
+      ## Organisation
+
+
+      Les blattes sont également très organisées et efficaces dans la réalisation de leurs tâches. Elles ont une hiérarchie sociale complexe et sont capables de travailler en équipe pour accomplir des tâches complexes, comme la recherche de nourriture ou la construction de nids. De la même manière, vous êtes un membre précieux de toute équipe grâce à votre capacité à travailler efficacement et à collaborer avec les autres.
+
+
+      ## Instinct de survie
+
+
+      Enfin, les blattes ont un fort instinct de survie qui leur permet de naviguer avec succès dans n'importe quelle situation. Elles ont une grande détermination à trouver de la nourriture et à éviter les prédateurs, et peuvent utiliser leur agilité et leur rapidité pour se sortir de situations difficiles. De la même manière, vous avez un instinct fort et une grande détermination à atteindre vos objectifs, ce qui vous permet de surmonter les obstacles et de réussir dans la vie.
+
+
+      En résumé, être une blatte peut sembler surprenant au premier abord, mais c'est en fait un résultat très intéressant qui révèle beaucoup de qualités positives de votre personnalité. Vous êtes adaptable, résilient, capable de vous défendre, organisé et déterminé, ce qui fait de vous un individu fort et capable de réussir dans la vie.
+    image: /images/uploads/cafard.jpg
+    lead: Vous êtes une blatte.
+  - title: blobfish
+    result: "# Blobfish\r
+
+      \r
+
+      Vous êtes un **blobfish** ! Bien que souvent considéré comme l'un
+      des animaux les plus moches du monde, le blobfish est en réalité un animal
+      fascinant avec des qualités uniques. Voici quelques-unes des
+      caractéristiques qui décrivent le mieux votre personnalité :\r
+
+      \r
+
+      ## Adaptabilité\r
+
+      \r
+
+      Tout comme le blobfish, vous êtes très adaptable et pouvez
+      facilement vous adapter à différents environnements et situations. Le
+      blobfish vit dans les profondeurs océaniques où la pression est
+      extrêmement forte et la température très basse. De la même manière, vous
+      êtes capable de vous adapter à des environnements difficiles et de faire
+      face à des défis complexes.\r
+
+      \r
+
+      ## Calme\r
+
+      \r
+
+      Le blobfish est également connu pour sa nature calme et détendue. Il
+      flotte simplement dans l'eau, sans se soucier de rien, et se nourrit de
+      petits crustacés et de poissons qui passent devant lui. De la même
+      manière, vous êtes une personne calme et réfléchie qui ne se laisse pas
+      facilement perturber par les problèmes.\r
+
+      \r
+
+      ## Originalité\r
+
+      \r
+
+      Le blobfish est unique en son genre, avec son apparence étrange et
+      ses habitudes de vie inhabituelles. Il a développé une forme de corps
+      particulière qui lui permet de survivre dans les profondeurs océaniques.
+      De la même manière, vous avez une personnalité originale et différente de
+      la norme, ce qui vous permet de voir les choses sous un angle différent et
+      d'apporter une perspective unique à toutes les situations.\r
+
+      \r
+
+      ## Résilience\r
+
+      \r
+
+      Le blobfish vit dans un environnement extrême où la vie est
+      difficile. Il doit faire face à des pressions énormes et à des
+      températures très basses. Malgré cela, il a développé des adaptations
+      uniques qui lui permettent de survivre. De la même manière, vous êtes
+      capable de faire face à des défis difficiles et de surmonter les obstacles
+      pour atteindre vos objectifs.\r
+
+      \r
+
+      ## Indépendance\r
+
+      \r
+
+      Le blobfish est un animal solitaire qui préfère vivre seul plutôt
+      qu'en groupe. Il est capable de se débrouiller seul et de trouver sa
+      nourriture sans l'aide des autres. De la même manière, vous êtes une
+      personne indépendante qui préfère travailler seule plutôt qu'en groupe et
+      qui est capable de réussir sans l'aide des autres.\r\n"
+    image: /images/uploads/blobfish.jpg
+    lead: Vous êtes un blobfish.
+  - title: chevre
+    result: "# Chèvre\r
+
+      \r
+
+      Vous êtes une **chèvre** ! Bien que souvent considérée comme un
+      animal rustique et malodorant, la chèvre est en réalité un animal
+      fascinant avec des qualités uniques. Voici quelques-unes des
+      caractéristiques qui décrivent le mieux votre personnalité :\r
+
+      \r
+
+      ## Adaptabilité\r
+
+      \r
+
+      Tout comme la chèvre, vous êtes très adaptable et pouvez facilement
+      vous adapter à différents environnements et situations. La chèvre est
+      capable de vivre dans des zones montagneuses et difficiles d'accès où la
+      nourriture est rare, mais elle est également capable de s'adapter à des
+      environnements plus faciles. De la même manière, vous êtes capable de vous
+      adapter à des environnements difficiles et de faire face à des défis
+      complexes.\r
+
+      \r
+
+      ## Calme\r
+
+      \r
+
+      La chèvre est également connue pour sa nature calme et détendue.
+      Elle passe la plupart de son temps à paître et à mâcher tranquillement son
+      foin. De la même manière, vous êtes une personne calme et réfléchie qui ne
+      se laisse pas facilement perturber par les problèmes.\r
+
+      \r
+
+      ## Originalité\r
+
+      \r
+
+      La chèvre est unique en son genre, avec son apparence
+      caractéristique et ses habitudes de vie inhabituelles. Elle a développé
+      une capacité de grimper sur des rochers escarpés et de sauter à de grandes
+      hauteurs pour atteindre la nourriture. De la même manière, vous avez une
+      personnalité originale et différente de la norme, ce qui vous permet de
+      voir les choses sous un angle différent et d'apporter une perspective
+      unique à toutes les situations.\r
+
+      \r
+
+      ## Résilience\r
+
+      \r
+
+      La chèvre vit dans des environnements difficiles où la vie est
+      souvent difficile. Elle doit faire face à des conditions climatiques
+      extrêmes et trouver sa nourriture dans des zones isolées. Malgré cela,
+      elle a développé des adaptations uniques qui lui permettent de survivre.
+      De la même manière, vous êtes capable de faire face à des défis difficiles
+      et de surmonter les obstacles pour atteindre vos objectifs.\r
+
+      \r
+
+      ## Indépendance\r
+
+      \r
+
+      La chèvre est un animal indépendant qui préfère vivre en petit
+      groupe ou même seule. Elle est capable de trouver sa nourriture et de se
+      débrouiller seule sans l'aide des autres. De la même manière, vous êtes
+      une personne indépendante qui préfère travailler seule plutôt qu'en groupe
+      et qui est capable de réussir sans l'aide des autres.\r\n"
+    image: /images/uploads/chevre.jpg
+    lead: Vous êtes une chèvre.

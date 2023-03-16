@@ -1,10 +1,11 @@
 {
     "compilerOptions": {
         "composite": true,
+        "types": ["node"],
         "module": "esnext",
         "moduleResolution": "node",
         "allowSyntheticDefaultImports":true
     },
     
-    "include": ["vite.config.ts","ssg"]
+    "include": ["vite.config.ts","ssg", "types"]
 }
