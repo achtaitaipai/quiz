@@ -1,8 +1,7 @@
-import sliderStyle from "../styles/custom-elements/slider.css?inline";
+import sliderStyle from "../styles/blocks/slider.css?inline";
 
 export class Slider extends HTMLElement {
   private _items: HTMLElement[] = [];
-  private _progressBar: HTMLProgressElement | null = null;
   private _slidesWrapper: HTMLDivElement | null = null;
   public currentFrame = 0;
 
@@ -27,13 +26,11 @@ export class Slider extends HTMLElement {
     const template = document.createElement("template");
     const style = document.createElement("style");
     style.textContent = sliderStyle;
-    this._progressBar = document.createElement("progress");
     this._slidesWrapper = document.createElement("div");
     this._slidesWrapper.classList.add("slidesWrapper");
     const slot = document.createElement("slot");
     const node = template.content;
     node.appendChild(style);
-    node.appendChild(this._progressBar);
     this._slidesWrapper.appendChild(slot);
     node.appendChild(this._slidesWrapper);
     return node;
@@ -69,8 +66,6 @@ export class Slider extends HTMLElement {
       const isCurrent = i === this.currentFrame;
       item.ariaHidden = (!isCurrent).toString();
     });
-    this._progressBar?.setAttribute("max", (this._items.length - 1).toString());
-    this._progressBar?.setAttribute("value", this.currentFrame.toString());
   }
 }
 

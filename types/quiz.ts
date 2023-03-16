@@ -12,6 +12,7 @@ export type Result = {
 
 export type Quiz = {
   title: string;
+  lead: string;
   description: string;
   questions: Question[];
   results: Result[];

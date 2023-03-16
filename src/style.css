@@ -10,35 +10,68 @@
 body {
   display: flex;
   flex-direction: column;
-  background: var(--color-light);
-  color: var(--color-dark);
+  background: var(--color-surface-1);
+  color: var(--color-text-2);
   font-family: var(--font-sans);
   line-height: 1.7;
+
+  --header-height: var(--size-5);
 }
 
 header,
 footer {
-  width: 100%;
-  background-color: var(--color-lightish);
   flex-grow: 0;
 }
+
+header {
+  position: sticky;
+  top: 0;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: saturate(180%) blur(5px);
+  border-bottom: var(--border-subtle);
+  z-index: 10;
+}
+
+footer {
+  height: var(--size-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: var(--border-subtle);
+  color: var(--color-text-2);
+  margin-top: var(--size-3);
+}
+
 main {
   flex-grow: 1;
 }
 
-:where(h1, h2, h3) {
+:where(h1, h2, h3, .lead) {
   --flow-space: 1.5rem;
   line-height: 1.1;
   font-weight: 800;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
+  padding: var(--size-0);
 }
 
-:where(h1, h2, h, legend) + * {
-  --flow-space: 0.5em;
+@supports ((background-clip: text)) or ((-webkit-background-clip: text)) {
+  :where(h1, h2, h3) {
+    background-image: var(--gradient-2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+h1 + * {
+  margin-top: var(--size-5);
 }
 
 h1 {
-  font-size: var(--size-4);
+  font-size: var(--size-5);
 }
 
 h2 {
@@ -58,17 +91,47 @@ h3 {
   max-inline-size: 28ch;
 }
 
+article {
+  max-inline-size: 75ch;
+  padding: var(--size-0);
+}
+
 /* UTILITIES */
 
 .flow > * + * {
   margin-top: var(--flow-space, 1em);
 }
 
+.cover {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  place-items: center;
+}
+
+.cover h1 {
+  z-index: 1;
+  font-size: var(--size-5);
+  mix-blend-mode: difference;
+  color: var(--color-text-1);
+}
+
+.cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--bg-img);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.45) saturate(1.25);
+}
+
 [class~="center"],
 [class*="center\:"] {
-  max-inline-size: var(--main-width);
   margin-inline: auto;
-  padding-inline: var(--size--1);
 }
 
 [class~="center\:vertical"] {
@@ -76,9 +139,8 @@ h3 {
   align-content: center;
 }
 
-.prose {
+.lead {
   font-size: var(--size-2);
-  max-inline-size: 50ch;
   font-weight: 700;
   line-height: 1.2;
 }

@@ -1,4 +1,5 @@
 title: animal
+lead: Quel animal êtes vous ?
 description: Au fond de chacun d'entre nous réside un animal. Découvrez quel est le vôtre !
 questions:
   - question: Quelle est votre activité préférée le week-end ?
@@ -59,11 +60,7 @@ results:
     image: /images/uploads/cafard.jpg
     lead: Vous êtes une blatte.
   - title: blobfish
-    result: "# Blobfish\r
-
-      \r
-
-      Vous êtes un **blobfish** ! Bien que souvent considéré comme l'un
+    result: "Vous êtes un **blobfish** ! Bien que souvent considéré comme l'un
       des animaux les plus moches du monde, le blobfish est en réalité un animal
       fascinant avec des qualités uniques. Voici quelques-unes des
       caractéristiques qui décrivent le mieux votre personnalité :\r
@@ -133,11 +130,7 @@ results:
     image: /images/uploads/blobfish.jpg
     lead: Vous êtes un blobfish.
   - title: chevre
-    result: "# Chèvre\r
-
-      \r
-
-      Vous êtes une **chèvre** ! Bien que souvent considérée comme un
+    result: "Vous êtes une **chèvre** ! Bien que souvent considérée comme un
       animal rustique et malodorant, la chèvre est en réalité un animal
       fascinant avec des qualités uniques. Voici quelques-unes des
       caractéristiques qui décrivent le mieux votre personnalité :\r

@@ -26,6 +26,7 @@ export const quizzesResultsRoutes = quizzesDatas
           content,
           image: result.image,
           title: result.title,
+          lead: result.lead,
         },
       };
     })
@@ -33,7 +34,7 @@ export const quizzesResultsRoutes = quizzesDatas
   .flat() satisfies Route[];
 
 export const quizzesRoutes = quizzesDatas.map(
-  ({ title, questions, results }) => {
+  ({ title, questions, results, lead }) => {
     const quizUrl = `/quizzes/${title}/`;
     const resultsUrl = results.map((r) => `./${r.title}/`);
     const processedQuestions = questions.map(({ question, options }) => {
@@ -43,7 +44,7 @@ export const quizzesRoutes = quizzesDatas.map(
       url: quizUrl,
       template: "quiz",
       data: {
-        title,
+        title: lead,
         questions: processedQuestions,
         results: resultsUrl.map((r) => obfuscate(r)),
         defaultResult: resultsUrl[0],

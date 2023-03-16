@@ -1,37 +1,24 @@
-<!DOCTYPE html>
-<html lang="fr">
+@layout('layouts/base')
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quizz</title>
-</head>
-
-<body>
-  <header>header</header>
-  <main class="center:vertical flow">
-    <form action="{{defaultResult}}" method="post" is="quiz-element" data-results="{{JSON.stringify(results)}}">
-        @each((question,questionIndex) in questions)
+@section('body')
+<main class="center:vertical">
+<h1 class="center">{{title}}</h1>
+  <form class="center" action="{{defaultResult}}" method="post" is="quiz-element" autocomplete="off" data-results="{{JSON.stringify(results)}}">
+      @each((question,questionIndex) in questions)
         <fieldset class="[ slider_item ] [ flow ]" data-slide>
-          <legend class="prose">
+          <legend class="lead center">
             {{question.question}}
           </legend>
           @each((option, index) in question.options)
-          <div class="form-group">
-            @set('id',questionIndex+'-'+index)
-            <input type="radio" name="{{questionIndex}}" id="{{id}}" value="{{option[0]}}" required /><label
-              tabindex="0" for="{{id}}">{{option[1]}}</label>
-          </div>
+            <div class="form-group">
+              @set('id',questionIndex+'-'+index)
+              <input type="radio" name="{{questionIndex}}" id="{{id}}" value="{{option[0]}}" required /><label
+                tabindex="0" for="{{id}}">{{option[1]}}</label>
+            </div>
           @end
         </fieldset>
-        @end
-
-      <input type="submit" value="Valider" />
-    </form>
-  </main>
-  <footer>footer</footer>
-  <script type="module" src="/src/main.ts"></script>
-</body>
-
-</html>
+      @end
+    <input type="submit" value="Valider" />
+  </form>
+</main>
+@end

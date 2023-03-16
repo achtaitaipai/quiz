@@ -1,22 +1,17 @@
-<!DOCTYPE html>
-<html lang="fr">
+@layout('layouts/base')
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quizz</title>
-</head>
+@section('body')
+<main class="flow">
+		<div class="cover" style='--bg-img:url("{{image}}");'>
+			{{--  <picture>
+				<img src="{{image}}" alt="">
+			</picture>  --}}
+			<h1>{{lead}}</h1>
+		</div>
+	
 
-<body>
-  <header>header</header>
-  
-  <img src="{{image}}" alt="">
-  <main class="center:vertical flow">
-	{{{content}}}
-  </main>
-  <footer>footer</footer>
-  <script type="module" src="/src/main.ts"></script>
-</body>
-
-</html>
+	<article class="center flow">
+		{{{content}}}
+	</article>
+</main>
+@end
