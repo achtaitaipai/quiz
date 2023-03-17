@@ -1,0 +1,36 @@
+[
+  {
+    "tokens": {
+      "-2": "clamp(0.63rem, calc(0.64rem + -0.01vw), 0.64rem);",
+      "-1": "clamp(0.8rem, calc(0.78rem + 0.08vw), 0.84rem);",
+      "0": "clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);",
+      "1": "clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);",
+      "2": "clamp(1.56rem, calc(1.41rem + 0.76vw), 2rem);",
+      "3": "clamp(1.95rem, calc(1.71rem + 1.24vw), 2.66rem);",
+      "4": "clamp(2.44rem, calc(2.05rem + 1.93vw), 3.55rem);",
+      "5": "clamp(3.05rem, calc(2.47rem + 2.93vw), 4.74rem);"
+    },
+    "patterns": {
+      ":root": "--size-KEY: VALUE;",
+      ".font-size-KEY": "font-size:var(--size-KEY);",
+      ".padding-KEY": "padding:var(--size-KEY);",
+      ".margin-KEY": "margin:var(--size-KEY);",
+      ".padding-block-KEY": "padding-block:var(--size-KEY);",
+      ".margin-block-KEY": "margin-block:var(--size-KEY);",
+      ".padding-block-start-KEY": "padding-block-start:var(--size-KEY);",
+      ".margin-block-start-KEY": "margin-block-start:var(--size-KEY);",
+      ".padding-block-end-KEY": "padding-block-end:var(--size-KEY);",
+      ".margin-block-end-KEY": "margin-block-end:var(--size-KEY);",
+      ".padding-inline-KEY": "padding-inline:var(--size-KEY);",
+      ".margin-inline-KEY": "margin-inline:var(--size-KEY);",
+      ".padding-inline-start-KEY": "padding-inline-start:var(--size-KEY);",
+      ".margin-inline-start-KEY": "margin-inline-start:var(--size-KEY);",
+      ".padding-inline-end-KEY": "padding-inline-end:var(--size-KEY);",
+      ".margin-inline-end-KEY": "margin-inline-end:var(--size-KEY);",
+      ".gap-KEY": "gap:var(--size-KEY);",
+      ".column-gap-KEY": "column-gap:var(--size-KEY);",
+      ".row-gap-KEY": "row-gap:var(--size-KEY);",
+      ".flow\\:KEY >* + * ": "margin-top:var(--size-KEY);"
+    }
+  }
+]

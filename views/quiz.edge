@@ -1,24 +1,28 @@
 @layout('layouts/base')
 
 @section('body')
-<main class="center:vertical">
-<h1 class="center align-center fade-in"><span>{{title}}</span></h1>
-  <form class="center fade-in" action="{{defaultResult}}" method="post" is="quiz-element" autocomplete="off" data-results="{{JSON.stringify(results)}}">
-      @each((question,questionIndex) in questions)
-        <fieldset class="[ slider_item ] [ flow ]" data-slide>
-          <legend class="lead center">
-            {{question.question}}
-          </legend>
-          @each((option, index) in question.options)
-            <div class="form-group">
-              @set('id',questionIndex+'-'+index)
-              <input type="radio" name="{{questionIndex}}" id="{{id}}" value="{{option[0]}}" required /><label
-                tabindex="0" for="{{id}}">{{option[1]}}</label>
-            </div>
-          @end
-        </fieldset>
+<main class="wrapper">
+    <h1 class="text-center grid place-content-center fade-in animation-delay-1">{{title}}</h1>
+    <div class="fade-in animation-delay-0">
+      <form class="[ quiz ] [ animated-shadow ]" action="{{defaultResult}}" method="get" is="quiz-element" autocomplete="off" data-results="{{JSON.stringify(results)}}">
+        @each((question,questionIndex) in questions)
+    <fieldset class="[ slider_item ] [ flow ]" data-slide>
+      <legend class="lead text-center margin-inline-auto">
+        {{question.question}}
+      </legend>
+      @each((option, index) in question.options)
+        @!component('components/radio',{
+          id:questionIndex+'-'+index,
+          label:option[1],
+          value:option[0],
+          name:questionIndex,
+          required:true
+        })
       @end
+    </fieldset>
+    @end
     <input type="submit" value="Valider" />
   </form>
+</div>
 </main>
 @end

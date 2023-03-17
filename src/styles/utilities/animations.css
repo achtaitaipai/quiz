@@ -1,0 +1,17 @@
+.slide-in-wrapper {
+  overflow: hidden;
+}
+
+.slide-in-wrapper > * {
+  display: block;
+  animation-name: slide-in-up;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-delay: var(--animation-delay, --time-1);
+  line-height: 1.7;
+}
+
+.fade-in {
+  animation: fade-in 0.3s ease-in both;
+  animation-delay: var(--animation-delay, --time-1);
+}

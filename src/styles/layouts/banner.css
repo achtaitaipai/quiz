@@ -1,0 +1,24 @@
+.banner {
+  position: relative;
+  display: grid;
+  height: calc(100vh - var(--header-height));
+  place-items: center;
+}
+
+@supports (height: 100dvh) {
+  .banner {
+    height: calc(100dvh - var(--header-height));
+  }
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--bg-img);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.45) saturate(1.25);
+}

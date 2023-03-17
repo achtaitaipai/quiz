@@ -1,0 +1,12 @@
+[
+  {
+    "tokens": {
+      "surface": "conic-gradient(from 90deg at 50% 0%, #111, 50%, #222, #111);",
+      "accent": "linear-gradient(to bottom right, #48005c, #8300e2, #a269ff)",
+      "text": "conic-gradient(from -90deg at top left, black, white);"
+    },
+    "patterns": {
+      ":root": "--gradient-KEY: VALUE;"
+    }
+  }
+]

@@ -1,0 +1,35 @@
+.quiz {
+  counter-reset: answer;
+  background-color: var(--color-surface-1);
+}
+
+.quiz fieldset {
+  display: grid;
+  counter-increment: answer;
+  padding-block: var(--size-0) var(--size-2);
+  padding-inline: var(--size-1);
+  border: 0;
+}
+
+.quiz legend {
+  float: left;
+  display: grid;
+  align-items: center;
+  margin-bottom: var(--size-2);
+  padding: 0;
+  text-align: center;
+  row-gap: var(--size-0);
+}
+
+.quiz legend::before {
+  content: counter(answer);
+  display: inline-grid;
+  margin-inline: auto;
+  place-items: center;
+  border-radius: 50%;
+  background-image: var(--gradient-accent);
+  color: var(--color-surface-1);
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1;
+}

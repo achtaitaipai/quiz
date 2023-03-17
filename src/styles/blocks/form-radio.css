@@ -1,0 +1,72 @@
+.radio-control {
+  display: inline-grid;
+  grid-template-columns: 1em auto;
+  align-items: center;
+  gap: var(--size--2);
+  font-size: var(--size-0);
+  color: var(--color-text-3);
+}
+
+.radio-control:not(:has([disabled])):hover {
+  color: var(--color-text-1);
+  cursor: pointer;
+}
+
+.radio-control:has(:checked) {
+  color: var(--color-text-1);
+}
+
+.radio-control:has([disabled]) {
+  cursor: not-allowed;
+}
+
+input[type="radio"] {
+  display: grid;
+  place-content: center;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid currentColor;
+  border-radius: 0.15em;
+  box-shadow: var(--shadow-3);
+}
+
+input[type="radio"]::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  transition: scale 0.15s;
+  scale: 0;
+  background-color: currentColor;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="radio"]:checked::after {
+  scale: 1;
+}
+
+input[type="radio"]:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 3px;
+}
+
+.radio-control:hover input[type="radio"] {
+  animation: scale-up var(--time-1);
+}
+
+input[type="radio"]:disabled {
+  cursor: not-allowed;
+  color: var(--color-text-3);
+}

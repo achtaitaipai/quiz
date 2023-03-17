@@ -1,17 +1,14 @@
 @layout('layouts/base')
 
 @section('body')
-<main class="flow">
-		<div class="cover fade-in animation-delay" style='--bg-img:url("{{image}}");'>
-			{{--  <picture>
-				<img src="{{image}}" alt="">
-			</picture>  --}}
-			<h1 class="slide-in animation-delay"><span >{{lead}}</span></h1>
+<main class="[ wrapper flow:5 ]">
+		<div class="[ banner ] [ full-bleed ] [ fade-in animation-delay-1 ]" style='--bg-img:url("{{image}}");'>
+			<h1 class="[ slide-in-wrapper color-text-1 padding-inline--1 text-center animation-delay-2 fade-in ]"><span class="">{{lead}}</span></h1>
 		</div>
-	
 
-	<article class="center flow">
+	<article class="[ flow ]">
 		{{{content}}}
 	</article>
+
 </main>
 @end

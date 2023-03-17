@@ -1,0 +1,13 @@
+[
+  {
+    "tokens": {
+      "1": "0.5px 1px 1.1px hsl(var(--shadow-color) / 0.14), 0.8px 1.6px 1.8px -1.6px hsl(var(--shadow-color) / 0.11), 1.9px 4px 4.5px -3.3px hsl(var(--shadow-color) / 0.09)",
+      "2": "0.5px 1px 1.1px hsl(var(--shadow-color) / 0.11), 1.1px 2.2px 2.5px -0.8px hsl(var(--shadow-color) / 0.1), 2.2px 4.6px 5.1px -1.6px hsl(var(--shadow-color) / 0.09), 4.8px 9.9px 11.1px -2.5px hsl(var(--shadow-color) / 0.08), 9.7px 20px 22.3px -3.3px hsl(var(--shadow-color) / 0.07)",
+      "3": "0.5px 1px 1.1px hsl(var(--shadow-color) / 0.11),1.8px 3.6px 4px -0.4px hsl(var(--shadow-color) / 0.1),3.1px 6.4px 7.1px -0.7px hsl(var(--shadow-color) / 0.1),5px 10.3px 11.5px -1.1px hsl(var(--shadow-color) / 0.09),7.8px 15.9px 17.8px -1.5px hsl(var(--shadow-color) / 0.09),11.8px 24.2px 27.1px -1.8px hsl(var(--shadow-color) / 0.08),17.5px 35.9px 40.1px -2.2px hsl(var(--shadow-color) / 0.08),25.3px 51.9px 58px -2.6px hsl(var(--shadow-color) / 0.07),35.6px 73px 81.6px -2.9px hsl(var(--shadow-color) / 0.06),48.7px 100px 111.8px -3.3px hsl(var(--shadow-color) / 0.06)"
+    },
+    "patterns": {
+      ":root": "--box-shadow-KEY: VALUE;",
+      ".box-shadow-KEY": "box-shadow: var(--box-shadow-KEY);"
+    }
+  }
+]

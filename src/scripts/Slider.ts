@@ -1,4 +1,5 @@
 import sliderStyle from "../styles/blocks/slider.css?inline";
+import { getFocusablesChilds } from "./helpers/dom";
 
 export class Slider extends HTMLElement {
   private _items: HTMLElement[] = [];
@@ -65,6 +66,10 @@ export class Slider extends HTMLElement {
     this._items.forEach((item, i) => {
       const isCurrent = i === this.currentFrame;
       item.ariaHidden = (!isCurrent).toString();
+      if (!isCurrent) item.setAttribute("disabled", "");
+      if (isCurrent) {
+        item.removeAttribute("disabled");
+      }
     });
   }
 }

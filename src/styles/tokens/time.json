@@ -1,0 +1,16 @@
+[
+  {
+    "tokens": {
+      "0": "185ms",
+      "1": "300ms",
+      "2": "486ms",
+      "3": "486ms",
+      "4": "787ms",
+      "5": "1257ms"
+    },
+    "patterns": {
+      ":root": "--time-KEY: VALUE;",
+      ".animation-delay-KEY": "--animation-delay: var(--time-KEY);"
+    }
+  }
+]
