@@ -1,5 +1,4 @@
 import sliderStyle from "../styles/blocks/slider.css?inline";
-import { getFocusablesChilds } from "./helpers/dom";
 
 export class Slider extends HTMLElement {
   private _items: HTMLElement[] = [];

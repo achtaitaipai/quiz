@@ -1,5 +1,5 @@
 /* https://www.joshwcomeau.com/css/full-bleed/ */
-.wrapper {
+/* .wrapper {
   display: grid;
   grid-template-columns: 1fr var(--main-width) 1fr;
 }
@@ -11,4 +11,11 @@
 .full-bleed {
   width: 100%;
   grid-column: 1 / -1;
+} */
+
+//https://kilianvalkhof.com/2020/css-html/full-bleed-layout-using-simple-css/
+.wrapper > *:not(.wrapper_not) {
+  position: relative;
+  max-inline-size: var(--main-width);
+  margin: auto;
 }

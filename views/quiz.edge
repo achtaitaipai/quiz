@@ -1,7 +1,7 @@
 @layout('layouts/base')
 
 @section('body')
-<main class="wrapper">
+<main class="wrapper grid place-content-center row-gap-5">
     <h1 class="text-center grid place-content-center fade-in animation-delay-1">{{title}}</h1>
     <div class="fade-in animation-delay-0">
       <form class="[ quiz ] [ animated-shadow ]" action="{{defaultResult}}" method="get" is="quiz-element" autocomplete="off" data-results="{{JSON.stringify(results)}}">
