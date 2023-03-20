@@ -1,0 +1,16 @@
+.quiz-result strong {
+  font-size: var(--size-1);
+  font-style: italic;
+  line-height: 1.4;
+  max-inline-size: 45ch;
+  color: var(--color-text-1);
+}
+
+.quiz-result article {
+  background-color: var(--color-surface-1);
+}
+
+.quiz-result blockquote {
+  padding-inline-start: var(--size-0);
+  border-inline-start: 3px solid currentColor;
+}

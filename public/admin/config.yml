@@ -19,7 +19,7 @@ collections:
         - {name: "description", label: "Description", widget: "text"}
         - {name: "questions", label: "Questions", widget: "list", fields: [
             {name: "question", label: "Question", widget: "string"},
-            {name: "options", label: "Options", widget: "list", field:
+            {name: "options", label: "Options", widget: "list", summary: "{{fields.option}}", field:
               {name: "option", label: "option", widget: "string"},
             }
           ]}

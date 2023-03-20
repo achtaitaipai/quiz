@@ -22,3 +22,15 @@
   background-size: cover;
   filter: brightness(0.45) saturate(1.25);
 }
+
+.banner a {
+  position: fixed;
+  color: var(--color-text-3);
+  line-height: 0;
+  animation: bounce var(--time-2) infinite linear;
+  bottom: var(--size-5);
+}
+
+.banner a:hover {
+  color: var(--color-text-1);
+}

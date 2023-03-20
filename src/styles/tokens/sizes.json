@@ -30,7 +30,7 @@
       ".gap-KEY": "gap:var(--size-KEY);",
       ".column-gap-KEY": "column-gap:var(--size-KEY);",
       ".row-gap-KEY": "row-gap:var(--size-KEY);",
-      ".flow\\:KEY >* + * ": "margin-top:var(--size-KEY);"
+      ".flow-KEY >* + * ": "margin-top:var(--size-KEY);"
     }
   }
 ]

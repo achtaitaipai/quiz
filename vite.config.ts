@@ -5,7 +5,7 @@ import { routes, base } from "./ssg/routes/index";
 export default defineConfig({
   plugins: [
     dedale({
-      contentDir: "content",
+      contentDir: "_datas",
       templateDir: "views",
       templateEngine: "edge",
       configureTemplateEngine: (env) => {

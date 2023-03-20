@@ -1,0 +1,221 @@
+title: caillou
+lead: Quel caillou êtes vous ?
+description: Êtes vous plutôt solide ou friable, lourd ou léger, utilisé dans
+  les combats ou en décoration ? Découvrez le dans ce quiz.
+questions:
+  - question: Quels sont les éléments indispensables dans un jardin ?
+    options:
+      - Une belle pelouse, du calme et une balançoire.
+      - Quelques meubles en palette, un barbecue et des amis.
+      - De belles fleurs et des fontaines comme à Versailles.
+      - Des outils de jardinage et un climat adapté.
+  - question: En cas de conflit il vaut mieux ?
+    options:
+      - Obtempérer.
+      - Fuir.
+      - Séduire.
+      - Se battre.
+  - question: Comment réagiriez vous si quelqu'un vous ramassait et vous gardait
+      dans sa poche ?
+    options:
+      - Au moins je serai au chaud.
+      - C'est l'occasion de voyager.
+      - Ça dépend de la poche.
+      - J'espère pour lui qu'il n'a rien de précieux autour.
+  - question: Si vous pouviez voyager dans le temps à quelle époque iriez vous ?
+    options:
+      - Je me sens bien dans mon époque.
+      - Le plus loin possible.
+      - Dans le futur lorsqu'on pourra tout faire depuis son lit.
+      - À l'époque où les gens avaient encore un peu de force.
+  - question: Quel est votre type d'humour ?
+    options:
+      - Pince sans rire.
+      - Gras.
+      - Raffiné.
+      - Noir.
+  - question: Selon vous quelle est la couleur de votre âme ?
+    options:
+      - Orange.
+      - Verte.
+      - Violette.
+      - Jaune.
+  - question: Quel parfum vous correspond le mieux ?
+    options:
+      - "Chewing-gum "
+      - Barbapapa
+      - Pissenlit.
+      - Réglisse
+  - question: "Votre moyen de locomotion préféré ? "
+    options:
+      - Mes chausons.
+      - Le stop.
+      - Le bateau.
+      - La moto.
+  - question: Vous ne pouvez pas sortir de chez vous si vous ?
+    options:
+      - N'avez pas une bonne raison.
+      - N'avez pas préparé votre itinéraire.
+      - Ne vous êtes pas apprêté.
+      - N'avez pas tout fermé à double tours.
+  - question: Votre destination de vacances idéale ?
+    options:
+      - La plage.
+      - Le plus loin possible.
+      - Un hôtel chic.
+      - Un endroit où je pourrai faire du sport.
+results:
+  - title: galet
+    lead: Vous êtes un galet.
+    image: /images/uploads/galet.jpg
+    result: >-
+      **À prime abord vous pouvez sembler une petite chose insignifiante et sans
+      valeur, pourtant vous êtes bien plus que ça. Poli par la mer et traversant
+      le temps, le galet cache bien des secrets.**
+
+
+      ## Simplicité
+
+
+      Lisse et arrondi le galet ne se fait pas remarquer. En groupe, il est rare que vous attiriez l'attentions sur vous. L'expérience vous a appris à écouter et observer plutôt qu'à vous faire remarquer. À première vue vous pouvez sembler commun voir  insignifiant. Il est fréquent que l'on vous oublie ou que l'on vous confonde avec quelqu'un d'autre. Pourtant ceux qui vous connaissent bien savent que sous votre aspect discret et normé se cachent beaucoup de petites spécificités. Pour les plus négligents vous ne méritez aucune attention, et d'ailleurs vous ne leur en demander pas. En revanche pour ceux qui s'intéressent réellement à vous, vous êtes un trésor précieux qu'ils souhaiteraient sentir dans le creux de la main à chaque moment difficile de la vie.
+
+
+      ## Croissance et évolution
+
+
+      > C'est l'instable qui est le fixe. C'est sur l'incertain qu'il faut baser.
+
+      >
+
+      > *Eugène Delacroix*
+
+
+      Vous êtes en constante évolution. Beaucoup vous voit comme quelqu'un de stable et décidé. Pourtant vos idées et convictions sont le résultat de vos expériences et des épreuves que vous avez traversées. Votre solidité et votre résilience vous ont aidé à traverser le temps sans marque, néanmoins de chacun des moments importants, vous avez tiré des apprentissages qui construisent la personne que vous êtes aujourd'hui. Vous avez navigué dans la vie comme au milieu des vagues et ce sont elles qui vous ont donné votre forme. Vous savez parfaitement que la vie est pleine de rebondissement et vous êtes prêt à vous réinventer à chaque fois qu'il le faut.
+
+
+      ## Charme
+
+
+      Lorsqu'ils ne sont pas sur les plages ou les bords de route, les galets deviennent des objets décoratifs, des pierres de massages ou même le matériau des œuvres d'Andy Goldsworthy.
+
+      Vous avez assez vite compris que vous ne pouviez pas miser sur votre physique ou votre charisme. Pourtant pour un certain nombre de personnes votre charme est irrésistible. Comme le galet, votre beauté ne réside pas dans l'image que vous renvoyez, mais dans les mondes que votre présence évoque. Pour ceux qui y sont sensibles votre aura est réconfortante et apaisante. 
+
+
+      ## Dynamisme
+
+
+      Votre calme et votre stabilité peuvent parfois donner l'impression d'une certaine mollesse, mais c'est mal vous connaître. Bien que vous soyez plutôt casanier, il ne vous suffit que d'une petite impulsion pour que vous partiez vivre de folles aventures. À la façon du galet qui rebondit sur l'eau lorsqu'on le lance, vous êtes capables, si vous êtes bien motivé, de réaliser des choses incroyables.
+  - title: gravier
+    lead: Vous êtes un gravier.
+    image: /images/uploads/gravier.jpg
+    result: >-
+      **S'il existe des pierres précieuses, le gravier est tout l'inverse.
+      Commun, usuel et banal, le gravier n'a, à prime abord, pas grand chose
+      d'intéressant. Néanmoins ses caractéristiques en font un élément
+      indispensable de tout ce qu'il compose. Sans lui peu de structures
+      tiendraient debout.**
+
+
+      ## Aventurier
+
+
+      Alors que la plupart des pierre naissent et vivent au même endroit, le gravier est souvent amené à parcourir de grandes distances, à se mélanger et s'aventure parfois dans des endroits incongrus. Le quotidien et les habitudes vous pèsent, vous avez sans cesse besoin d'être stimulé et surpris. Votre soif de l'aventure est inextinguible et cela vous attire parfois des ennuis. Néanmoins c'est aussi ce qui fait votre force, vous êtes curieux de l'autre et tirez le maximum de chacune de vos rencontres. Partout où vous passez, vous laissez une marque forte et vous n'oublier jamais de transmettre ce que vous avez appris ailleurs. Vous vous façonnez à travers ces multiples voyages et n'oubliez jamais d'où vous venez.
+
+
+      ## Souplesse
+
+
+      > Ce n'est pas l'espèce la plus forte qui survit, ni la plus intelligente, mais celle qui sait le mieux s'adapter aux changements.
+
+      >
+
+      > *Charles Darwin*
+
+
+      Contrairement à d'autres pierres, le gravier est très malléable. Là où la plupart résistent et s'épuisent, vous préférez rebondir, éviter et vous faufiler. Votre nature humble vous permet de vous fondre dans votre environnement et de vous adapter facilement aux autre. Votre souplesse et votre capacité d'adaptation vous donnent une résistance à la pression remarquable. 
+
+      Polyvalent et utile, le gravier est une pierre utilisée dans une variété de contextes différents. Comme lui, vous êtes polyvalent et vos multiples compétences ne cessent d'étonner vos proches. Vous êtes peut-être peu remarqué, mais vous êtes indispensable pour maintenir l'équilibre de l'environnement qui vous entoure.
+
+
+      ## Travailleur
+
+
+      Sans en avoir l'air le gravier est souvent le support d'édifice immense. Dans la vie vous ne miser pas sur la chance ou des compétences innées. Vos réussites ont comme seule origine votre force de travail. Vous pouvez parfois sembler léger ou désinvolte, mais votre persévérance n'a d'égale que votre force de travail. Si le diable est dans les détails, l'équilibre l'est aussi. Dans votre vie privée, comme dans votre vie professionnelle vous êtes à l'origine de beaucoup des petits rien qui maintiennent l'harmonie. Il peut arriver que vous ressentiez un manque de reconnaissance, parfois votre entourage oublie de vous remercier pour vos multiples attentions.
+  - result: >-
+      **Parfois au cœur d'un vulgaire sédiment s'est développé une matière
+      transparente et anguleuse. Elle peut paraître froide et artificielle.
+      Pourtant le quartz est souvent considéré comme des rayons de lumières
+      solidifiés et dans beaucoup de cultures il est associé à la magie.**
+
+
+      ## Précieux
+
+
+      Translucide et anguleux le quartz n'est pas sans rappelé le cristal. Sa transparence et son apparence précieuse peuvent parfois lui donner un aspect artificiel. Certains, qui vous connaissent mal, vous voient comme une espèce de diva, capricieuse et fragile. Votre coquetterie et votre franchise peuvent parfois donner l'impression d'une certaine superficialité. Pourtant tout comme le quartz se forme au milieu de dépôts de roche, vous vous êtes construit dans un contexte compliqué et avait su magnifier ce qui aurait détruit d'autres que vous. Sous votre aspect fragile se cache une solidité que peu soupçonnent.
+
+
+      ## Transparence
+
+
+      > La sincérité est la plus grande forme d'amour.
+
+      >
+
+      > *Jean-Jacques Rousseau*
+
+
+      Vous êtes un piètre menteur et votre honnêteté vous joue parfois des tours. En dehors de votre jardin secret vous laissez transparaître à peu près tout ce que vous pensez. Ce trait de caractère vous a permis de nouer des relations saines et solides,. Cependant il peut vous arriver, sans le vouloir, de vous montrer blessant et certaines personnes ont du mal à supporter votre sincérité. De plus vous attendez de vos proches qu'ils soient aussi transparent que vous ne l'êtes et vous vous sentez facilement trahis.
+
+
+      ## Précision
+
+
+      Avec vous rien n'est laissé au hasard. Vous savez parfaitement ce que vous voulez et ne laissez rien dépasser. La négligence vous exaspère et vous mettez tout en œuvre pour que les choses se passent comme elles devraient. Comme le quartz qui est utilisé en horlogerie, vous faites preuve d'une précision et d'une régularité sans faille. Véritable chef d'orchestre de votre environnement vous arrivez souvent à vos fins et ne misez jamais sur la chance.
+
+
+      ## Solaire
+
+
+      > La lumière est la force vitale qui éclaire et donne de l'énergie à toutes les formes de vie.
+
+      >
+
+      > *Albert Einstein*
+
+
+      Bien que vous traversiez parfois des périodes sombres, vous n'en n'êtes pas moins lumineux. Vos proches le savent, vous êtes une source d'énergie et d'inspiration inépuisable. Vous êtes encourageant et sans vous votre entourage aurait une vie bien plus morne. Dans beaucoup de croyances primitives, le quartz était considéré comme d'origine céleste et il était souvent à l'origine de pouvoirs surnaturels. Dans certaines traditions les néophytes devaient même s'introduire des morceaux de quartz dans le corps. Votre dévotion et votre disponibilité ne vous sont pas toujours rendus. Vous êtes conscient du rôle que vous jouez dans la vie de vos proches et souvent vous n'osez pas demander du soutien dans les moments obscurs.
+    image: /images/uploads/quartz.jpg
+    title: quartz
+    lead: Vous êtes un quartz.
+  - title: silex
+    lead: Vous êtes un silex.
+    image: /images/uploads/silex.jpg
+    result: >-
+      **À première vue froide et austère le Silex est une pierre riche en
+      histoire et en utilité. Elle est utilisé depuis des millénaires pour sa
+      résistance et sa capacité à être taillé de manière précise.**
+
+
+      ## Solidité
+
+
+      Mal avisé serait celui qui tenterait de vous briser. Le Silex est connu depuis la préhistoire pour sa résistance. Le temps et les chocs n'ont que peu d'impact sur vous. Lorsque vous avez une idée en tête il est difficile de l'y déloger et vous êtes prêt à surmonter bien des épreuves pour arriver à vos fins. Parfois votre détermination vous isole. Certaines personnes, plus faibles, voient dans votre dureté une forme d'insensibilité, mais, à l'inverse, ceux qui vous connaissent savent que vous êtes sûr et qu'ils pourront toujours compter sur vous.
+
+
+      ## Explosif
+
+
+      Les caractéristiques du Silex en font une pierre riche en utilités. Il peut être utilisé pour allumer un feu afin de se chauffer et se nourrir, mais peut également servir à trancher ou projeter une balle mortelle. Avec vous il est difficile de savoir à quoi s'attendre. Pour vos proches vous êtes un pilier inébranlable et votre loyauté n'a pas de limite. Cependant, si quelqu'un vous veut du mal, vous pouvez rapidement vous montrer hostile et même faire preuve d'une certaine violence. Vous êtes imprévisible et ceux qui vous aiment comme ceux qui vous craignent savent que vous êtes capables de faire des étincelles de passion, d'inspiration ou de colères.
+
+
+      ## Solitude
+
+
+      > La solitude est le refuge des âmes fortes et des esprits libres.
+
+      >
+
+      > *Arthur Schopenhauer*
+
+
+      Le silex est une pierre unique, facilement reconnaissable grâce à son apparence distincte. Sa couleur grise à noire, ses reflets brillants et sa texture lisse en font une pierre remarquable. Il est souvent strié par des lignes parallèles, qui témoignent des pressions subies lors de sa formation. Cependant, en société, il est souvent mal vu d'être différent et identifiable. Votre détermination et votre rudesse peuvent parfois vous isoler, mais vous savez que vous êtes votre seul vrai allié. Bien que la vie vous amène parfois à partager votre route avec d'autres, vous savez parfaitement où vous allez et personne ne peut vous en détourner. La solitude est votre refuge, où vous pouvez vous ressourcer et vous recentrer pour affronter les défis de la vie avec une force intérieure renouvelée.

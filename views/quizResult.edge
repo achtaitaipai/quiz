@@ -1,14 +1,18 @@
 @layout('layouts/base')
 
 @section('body')
-<main class="[ wrapper flow:5 ]">
-		<div class="[ banner ] [ wrapper_not ] [ fade-in animation-delay-1 ]" style='--bg-img:url("{{image}}");'>
+<main class="quiz-result">
+		<section class="[ banner ] [ fade-in animation-delay-1 ]" style='--bg-img:url("{{image}}");'>
 			<h1 class="[ slide-in-wrapper color-text-1 padding-inline--1 text-center animation-delay-2 fade-in ]"><span class="">{{lead}}</span></h1>
+			<a href="#content" title="skip to content">
+				<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+			</a>
+		</section>
+		<div class="[ wrapper ]">
+			<article class="[ flow ]  [ padding-block-5 ]" id="content">
+				{{{content}}}
+			</article>
 		</div>
-
-	<article class="[ flow ]">
-		{{{content}}}
-	</article>
 
 </main>
 @end

@@ -6,6 +6,7 @@
 @import url("styles/tokens/generated.css");
 @import url("styles/blocks/quiz.css");
 @import url("styles/blocks/form-radio.css");
+@import url("styles/blocks/quiz-result.css");
 
 @import url("styles/layouts/wrapper.css");
 @import url("styles/layouts/flow.css");
@@ -16,6 +17,10 @@
 @import url("styles/utilities/animations.css");
 
 /* GLOBAL */
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   display: flex;
@@ -53,7 +58,6 @@ footer {
   align-items: center;
   border-top: 1px solid var(--color-surface-2);
   color: var(--color-text-3);
-  margin-top: var(--size-3);
 }
 
 main {
@@ -98,15 +102,6 @@ h1 {
 }
 
 h2,
-h3,
-.lead {
+h3 {
   max-inline-size: 28ch;
-}
-
-strong {
-  font-size: var(--size-1);
-  font-style: italic;
-  line-height: 1.4;
-  max-inline-size: 45ch;
-  color: var(--color-text-1);
 }

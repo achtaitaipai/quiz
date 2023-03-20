@@ -13,9 +13,8 @@
   grid-column: 1 / -1;
 } */
 
-//https://kilianvalkhof.com/2020/css-html/full-bleed-layout-using-simple-css/
 .wrapper > *:not(.wrapper_not) {
   position: relative;
   max-inline-size: var(--main-width);
-  margin: auto;
+  margin-inline: auto;
 }
