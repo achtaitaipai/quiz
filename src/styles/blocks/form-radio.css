@@ -1,4 +1,4 @@
-.radio-control {
+/* .radio-control {
   display: inline-grid;
   grid-template-columns: 1em auto;
   align-items: center;
@@ -69,4 +69,4 @@ input[type="radio"]:focus-visible {
 input[type="radio"]:disabled {
   cursor: not-allowed;
   color: var(--color-text-3);
-}
+} */

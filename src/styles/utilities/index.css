@@ -20,7 +20,7 @@
   line-height: 1.2;
 }
 
-.animated-shadow {
+/* .animated-shadow {
   position: relative;
 }
 
@@ -46,7 +46,7 @@
   100% {
     background-position: 300% 0;
   }
-}
+} */
 
 .sr-only {
   position: absolute !important;

@@ -1,7 +1,7 @@
 :host {
   position: relative;
   display: block;
-  background-color: var(--color-surface-1);
+  /* background-color: var(--color-surface-1); */
   /* background-image: var(--gradient-surface); */
 }
 

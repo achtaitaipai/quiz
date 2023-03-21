@@ -5,9 +5,9 @@
   place-items: center;
 }
 
-@supports (height: 100dvh) {
+@supports (height: 100svh) {
   .banner {
-    height: calc(100dvh - var(--header-height));
+    height: calc(100svh - var(--header-height));
   }
 }
 
@@ -27,7 +27,8 @@
   position: fixed;
   color: var(--color-text-3);
   line-height: 0;
-  animation: bounce var(--time-2) infinite linear;
+  animation: var(--time-4) ease-in infinite bounce;
+  //animation: 3s ease-in 1s 2 reverse both paused slidein;
   bottom: var(--size-5);
 }
 

@@ -1,13 +1,13 @@
 @layout('layouts/base')
 
 @section('body')
-<main class="wrapper grid place-content-center row-gap-5">
-    <h1 class="text-center grid place-content-center fade-in animation-delay-1">{{title}}</h1>
+<main class="quiz-page">
+    <h1 class="fade-in animation-delay-1">{{title}}</h1>
     <div class="fade-in animation-delay-0">
-      <form class="[ quiz ] [ animated-shadow ]" action="{{defaultResult}}" method="get" is="quiz-element" autocomplete="off" data-results="{{JSON.stringify(results)}}">
+      <form class="[ quiz ] [ flow ]" action="{{defaultResult}}" method="get" is="quz-element" autocomplete="off" data-results="{{JSON.stringify(results)}}">
         @each((question,questionIndex) in questions)
-    <fieldset class="[ slider_item ] [ flow ]" data-slide>
-      <legend class="lead text-center margin-inline-auto">
+    <fieldset class="[ slider_item ]" data-slide>
+      <legend>
         {{question.question}}
       </legend>
       @each((option, index) in question.options)

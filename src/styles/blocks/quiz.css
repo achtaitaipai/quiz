@@ -1,35 +1,105 @@
-.quiz {
-  counter-reset: answer;
-  background-color: var(--color-surface-1);
+.quiz-page {
+  display: grid;
+  /* place-content: center; */
+}
+
+.quiz-page h1 {
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.quiz-page > * {
+  max-inline-size: clamp(min(98vw, 30rem), 80vw, 75ch);
+  margin-inline: auto;
 }
 
 .quiz fieldset {
-  display: grid;
-  counter-increment: answer;
-  padding-block: var(--size-0) var(--size-2);
-  padding-inline: var(--size-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: var(--size-3);
+  padding: 0;
+  padding-inline: var(--size-0);
+  padding-block: var(--size-1);
   border: 0;
 }
 
 .quiz legend {
   float: left;
-  display: grid;
-  align-items: center;
-  margin-bottom: var(--size-2);
-  padding: 0;
-  text-align: center;
-  row-gap: var(--size-0);
+  width: 100%;
+  font-size: var(--size-2);
+  font-weight: 600;
+  font-style: italic;
+  color: var(--color-text-2);
+  font-family: serif;
+  line-height: 1.1;
 }
 
-.quiz legend::before {
-  content: counter(answer);
-  display: inline-grid;
-  margin-inline: auto;
-  place-items: center;
-  border-radius: 50%;
-  background-image: var(--gradient-accent);
+.quiz label {
+  color: var(--color-text-2);
+}
+
+.quiz label div {
+  position: relative;
+  cursor: pointer;
+  transition: transform var(--time-0);
+  z-index: 1;
+  flex-basis: var(--size-5);
+}
+
+.quiz label:where(:hover, :focus-within) div,
+.quiz label :checked + div {
+  transform: translate(-0.5rem, -0.5rem);
+  z-index: 1;
+  /* color: var(--color-text-1); */
+}
+
+.quiz label :checked + div {
   color: var(--color-surface-1);
-  width: 1.4em;
-  height: 1.4em;
-  line-height: 1;
+  background-color: var(--color-text-1);
+  transition: color var(--time-0);
+}
+
+.quiz label :checked + div span {
+  background-color: var(--color-text-1);
+  transition: background-color var(--time-0);
+}
+
+.quiz label span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  outline: 2px solid currentColor;
+  text-align: center;
+  text-transform: uppercase;
+  /* line-height: 1.2; */
+  font-weight: 500;
+  font-size: var(--size-0);
+  padding-inline: var(--size--1);
+  padding-block: var(--size--2);
+  background-color: var(--color-surface-1);
+  z-index: 10;
+}
+
+.quiz label span::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: currentColor;
+  z-index: -1;
+  outline: 2px solid var(--color-text-1);
+  transition: color var(--time-1), background-color var(--time-0),
+    transform var(--time-0);
+}
+.quiz label:where(:hover, :focus-within) span::before,
+.quiz label :checked + div span::before {
+  transform: translate(0.5rem, 0.5rem);
+}
+
+.quiz input[type="radio"] {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
 }

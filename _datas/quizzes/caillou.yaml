@@ -48,7 +48,7 @@ questions:
       - Réglisse
   - question: "Votre moyen de locomotion préféré ? "
     options:
-      - Mes chausons.
+      - Mes chaussons.
       - Le stop.
       - Le bateau.
       - La moto.
@@ -140,7 +140,7 @@ results:
       ## Travailleur
 
 
-      Sans en avoir l'air le gravier est souvent le support d'édifice immense. Dans la vie vous ne miser pas sur la chance ou des compétences innées. Vos réussites ont comme seule origine votre force de travail. Vous pouvez parfois sembler léger ou désinvolte, mais votre persévérance n'a d'égale que votre force de travail. Si le diable est dans les détails, l'équilibre l'est aussi. Dans votre vie privée, comme dans votre vie professionnelle vous êtes à l'origine de beaucoup des petits rien qui maintiennent l'harmonie. Il peut arriver que vous ressentiez un manque de reconnaissance, parfois votre entourage oublie de vous remercier pour vos multiples attentions.
+      Sans en avoir l'air le gravier est souvent le support d'édifice immense. Dans la vie vous ne miser pas sur la chance ou des compétences innées. Vos réussites ont comme seule origine votre force de travail. Vous pouvez parfois sembler léger ou désinvolte, mais votre persévérance n'a d'égale que votre acharnement. Si le diable est dans les détails, l'équilibre l'est aussi. Dans votre vie privée, comme dans votre vie professionnelle vous êtes à l'origine de beaucoup des petits rien qui maintiennent l'harmonie. Il peut arriver que vous ressentiez un manque de reconnaissance, parfois votre entourage oublie de vous remercier pour vos multiples attentions.
   - result: >-
       **Parfois au cœur d'un vulgaire sédiment s'est développé une matière
       transparente et anguleuse. Elle peut paraître froide et artificielle.
@@ -192,7 +192,7 @@ results:
     image: /images/uploads/silex.jpg
     result: >-
       **À première vue froide et austère le Silex est une pierre riche en
-      histoire et en utilité. Elle est utilisé depuis des millénaires pour sa
+      histoire et en utilité. Elle est utilisée depuis des millénaires pour sa
       résistance et sa capacité à être taillé de manière précise.**
 
 
