@@ -1,29 +1,14 @@
-import { Slider } from "./Slider";
-
 export class Quiz extends HTMLFormElement {
-  private _slider = new Slider();
-
   connectedCallback() {
-    const submitElement = this.querySelector<HTMLInputElement>(
-      'input[type="submit"]'
-    );
-    submitElement?.style.setProperty("display", "none");
-    this._slider.innerHTML = this.innerHTML;
-    this._slider.addEventListener("end", () => {
-      console.log("fin");
-    });
-
-    this.innerHTML = "";
-    this.appendChild(this._slider);
-
-    this.addEventListener("change", () => {
-      const nextFrame = this._slider.currentFrame + 1;
-      const frame = this._slider?.goTo(nextFrame);
-      if (nextFrame > frame) this.submit();
-    });
+    this.addEventListener("submit", this.handleSubmit);
   }
 
-  submit() {
+  disconnectedCallback() {
+    this.removeEventListener("submit", this.handleSubmit);
+  }
+
+  handleSubmit = (e: SubmitEvent) => {
+    e.preventDefault();
     const dataRaw = this.getAttribute("data-results");
     if (!dataRaw) return;
     const datas = JSON.parse(dataRaw) as string[];
@@ -43,7 +28,7 @@ export class Quiz extends HTMLFormElement {
     // atob is deprecated only in node environment
     const url = atob(datas[parseInt(key)]);
     location.href = url;
-  }
+  };
 }
 
 export const defineQuizElement = () =>

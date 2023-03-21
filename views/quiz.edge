@@ -1,28 +1,29 @@
 @layout('layouts/base')
 
 @section('body')
-<main class="quiz-page">
-    <h1 class="fade-in animation-delay-1">{{title}}</h1>
-    <div class="fade-in animation-delay-0">
-      <form class="[ quiz ] [ flow ]" action="{{defaultResult}}" method="get" is="quz-element" autocomplete="off" data-results="{{JSON.stringify(results)}}">
-        @each((question,questionIndex) in questions)
-    <fieldset class="[ slider_item ]" data-slide>
-      <legend>
-        {{question.question}}
-      </legend>
-      @each((option, index) in question.options)
+<main class="quiz-page wrapper">
+  <h1 class="fade-in animation-delay-1 text-center margin-block-5">{{title}}</h1>
+  <div class="fade-in animation-delay-0">
+    <form class="[ quiz ] [ flow-5 ]" action="{{defaultResult}}" method="get" is="quiz-element" autocomplete="off"
+      data-results="{{JSON.stringify(results)}}">
+      @each((question,questionIndex) in questions)
+      <fieldset class="[ radio-pilles ]" data-slide>
+        <legend>
+          {{question.question}}
+        </legend>
+        @each((option, index) in question.options)
         @!component('components/radio',{
-          id:questionIndex+'-'+index,
-          label:option[1],
-          value:option[0],
-          name:questionIndex,
-          required:true
+        id:questionIndex+'-'+index,
+        label:option[1],
+        value:option[0],
+        name:questionIndex,
+        required:true
         })
+        @end
+      </fieldset>
       @end
-    </fieldset>
-    @end
-    <input type="submit" value="Valider" />
-  </form>
-</div>
+      <input type="submit" value="Valider" />
+    </form>
+  </div>
 </main>
 @end

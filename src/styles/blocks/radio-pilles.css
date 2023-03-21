@@ -1,30 +1,38 @@
-.quiz-page {
+.quiz {
   display: grid;
-  /* place-content: center; */
+  grid-auto-rows: 1fr;
+  gap: var(--size-5);
+  counter-reset: qustion;
 }
 
-.quiz-page h1 {
+.radio-pilles {
+  position: relative;
   display: grid;
-  place-content: center;
-  text-align: center;
-}
-.quiz-page > * {
-  max-inline-size: clamp(min(98vw, 30rem), 80vw, 75ch);
-  margin-inline: auto;
-}
-
-.quiz fieldset {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  grid-template-rows: auto;
+  grid-auto-rows: 1fr;
   gap: var(--size-3);
   padding: 0;
   padding-inline: var(--size-0);
-  padding-block: var(--size-1);
   border: 0;
+  counter-increment: question;
 }
 
-.quiz legend {
+.radio-pilles::before {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  width: 2.5ch;
+  height: 2.5ch;
+  text-align: center;
+  line-height: 1;
+  content: counter(question);
+  font-size: var(--size-3);
+  background-color: var(--color-text-1);
+  border-radius: 50%;
+  color: var(--color-surface-1);
+}
+
+.radio-pilles legend {
   float: left;
   width: 100%;
   font-size: var(--size-2);
@@ -35,37 +43,36 @@
   line-height: 1.1;
 }
 
-.quiz label {
+.radio-pilles_item {
   color: var(--color-text-2);
 }
 
-.quiz label div {
+.radio-pilles_item div {
   position: relative;
   cursor: pointer;
   transition: transform var(--time-0);
   z-index: 1;
-  flex-basis: var(--size-5);
+  height: 100%;
 }
 
-.quiz label:where(:hover, :focus-within) div,
-.quiz label :checked + div {
+.radio-pilles_item:where(:hover, :focus-within) div,
+.radio-pilles_item :checked + div {
   transform: translate(-0.5rem, -0.5rem);
   z-index: 1;
-  /* color: var(--color-text-1); */
 }
 
-.quiz label :checked + div {
+.radio-pilles_item :checked + div {
   color: var(--color-surface-1);
   background-color: var(--color-text-1);
   transition: color var(--time-0);
 }
 
-.quiz label :checked + div span {
+.radio-pilles_item :checked + div span {
   background-color: var(--color-text-1);
   transition: background-color var(--time-0);
 }
 
-.quiz label span {
+.radio-pilles_item span {
   display: block;
   width: 100%;
   height: 100%;
@@ -83,7 +90,7 @@
   z-index: 10;
 }
 
-.quiz label span::before {
+.radio-pilles_item span::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -93,12 +100,12 @@
   transition: color var(--time-1), background-color var(--time-0),
     transform var(--time-0);
 }
-.quiz label:where(:hover, :focus-within) span::before,
-.quiz label :checked + div span::before {
+.radio-pilles_item:where(:hover, :focus-within) span::before,
+.radio-pilles_item :checked + div span::before {
   transform: translate(0.5rem, 0.5rem);
 }
 
-.quiz input[type="radio"] {
+.radio-pilles input[type="radio"] {
   position: absolute;
   appearance: none;
   -webkit-appearance: none;
