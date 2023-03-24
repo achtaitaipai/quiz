@@ -23,9 +23,13 @@
   filter: brightness(0.45) saturate(1.25);
 }
 
+.banner h1 {
+  color: var(--color-text-1-dark);
+}
+
 .banner a {
   position: fixed;
-  color: var(--color-text-3);
+  color: var(--color-text-2-dark);
   line-height: 0;
   animation: var(--time-4) ease-in infinite bounce;
   //animation: 3s ease-in 1s 2 reverse both paused slidein;
@@ -33,5 +37,5 @@
 }
 
 .banner a:hover {
-  color: var(--color-text-1);
+  color: var(--color-text-1-dark);
 }

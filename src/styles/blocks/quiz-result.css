@@ -11,6 +11,14 @@
 }
 
 .quiz-result blockquote {
+  position: relative;
   padding-inline-start: var(--size-0);
-  border-inline-start: 3px solid currentColor;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    left: 0;
+    background-image: var(--gradient-1);
+  }
 }

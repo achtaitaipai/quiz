@@ -1,0 +1,15 @@
+:root {
+  --color-text-1: hsl(var(--text-1-light));
+  --color-text-2: hsl(var(--text-2-light));
+  --color-text-3: hsl(var(--text-3-light));
+  --color-surface-1: hsl(var(--surface-1-light));
+  --color-surface-2: hsl(var(--surface-2-light));
+}
+
+html[data-theme="dark"] {
+  --color-text-1: hsl(var(--text-1-dark));
+  --color-text-2: hsl(var(--text-2-dark));
+  --color-text-3: hsl(var(--text-3-dark));
+  --color-surface-1: hsl(var(--surface-1-dark));
+  --color-surface-2: hsl(var(--surface-2-dark));
+}

@@ -1,0 +1,7 @@
+.quiz {
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-rows: 1fr;
+  gap: var(--size-5);
+  counter-reset: question;
+}

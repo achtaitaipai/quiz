@@ -1,9 +1,7 @@
 [
   {
     "tokens": {
-      "surface": "conic-gradient(from 90deg at 50% 0%, #111, 50%, #222, #111);",
-      "accent": "linear-gradient( 135deg,hsl(287deg 100% 18%) 0%,hsl(293deg 100% 19%) 11%,hsl(300deg 100% 20%) 22%,hsl(306deg 100% 21%) 33%,hsl(313deg 100% 22%) 44%,hsl(319deg 100% 23%) 56%,hsl(326deg 100% 23%) 67%,hsl(332deg 100% 24%) 78%,hsl(339deg 100% 25%) 89%,hsl(345deg 100% 26%) 100%);",
-      "text": "conic-gradient(from -90deg at top left, black, white);"
+      "1": "linear-gradient(135deg, #751c01, hsl(52, 74%, 35%))"
     },
     "patterns": {
       ":root": "--gradient-KEY: VALUE;"

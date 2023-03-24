@@ -5,11 +5,18 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="/scripts/theme-switch.js"></script>
   <title>{{title}}</title>
 </head>
 
 <body>
-  <header class="box-shadow-1">header</header>
+  <header class="header">
+    <div class="header_left">
+      <a > le site</a>
+    </div>
+
+      @!component('components/theme-switch')
+  </header>
 	@!section('body')
   <footer>© 2023 - Colin Maillard</footer>
   <script type="module" src="/src/main.ts"></script>

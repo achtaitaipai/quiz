@@ -1,12 +1,19 @@
 /* RESET https://andy-bell.co.uk/a-modern-css-reset/ */
 
-@import url("styles/global/reset.css");
 @import url("styles/global/variables.css");
+@import url("styles/global/theme.css");
+@import url("styles/global/reset.css");
 @import url("styles/global/animations.css");
+
 @import url("styles/tokens/generated.css");
+
+@import url("styles/blocks/header.css");
+@import url("styles/blocks/theme-switch.css");
+@import url("styles/blocks/quiz.css");
 @import url("styles/blocks/radio-pilles.css");
 @import url("styles/blocks/form-radio.css");
 @import url("styles/blocks/quiz-result.css");
+@import url("styles/blocks/button.css");
 
 @import url("styles/layouts/wrapper.css");
 @import url("styles/layouts/flow.css");
@@ -31,7 +38,7 @@ body {
   line-height: 1.7;
   font-size: var(--size-0);
 
-  --header-height: var(--size-5);
+  --header-height: var(--size-4);
 }
 
 header,
@@ -39,24 +46,12 @@ footer {
   flex-grow: 0;
 }
 
-header {
-  /* position: sticky; */
-  top: 0;
-  height: var(--header-height);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: saturate(180%) blur(5px);
-  z-index: 10;
-  box-shadow: var(--box-shadow-3);
-}
-
 footer {
   height: var(--size-3);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid var(--color-surface-2);
+  border-top: 1px solid var(--color-text-3);
   color: var(--color-text-3);
 }
 
@@ -74,7 +69,7 @@ main {
 
 @supports ((background-clip: text)) or ((-webkit-background-clip: text)) {
   :where(h1, h2, h3) {
-    background-image: var(--gradient-accent);
+    background-image: var(--gradient-1);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -82,7 +77,7 @@ main {
 }
 
 h1 {
-  font-size: var(--size-4);
+  font-size: var(--size-5);
 }
 
 h2 {
