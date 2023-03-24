@@ -5,250 +5,407 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="/quiz/scripts/theme-switch.js"></script>
   <title>Quel animal êtes vous ?</title>
-  <script type="module" crossorigin src="/quiz/assets/main-8fafc6b2.js"></script>
-  <link rel="stylesheet" href="/quiz/assets/main-4cdd98ea.css">
+  <script type="module" crossorigin src="/quiz/assets/main-5484d426.js"></script>
+  <link rel="stylesheet" href="/quiz/assets/main-ea36b8cf.css">
 </head>
 
 <body>
-  <header class="box-shadow-1">header</header>
-<main class="quiz-page">
-    <h1 class="fade-in animation-delay-1">Quel animal êtes vous ?</h1>
-    <div class="fade-in animation-delay-0">
-      <form class="[ quiz ] [ flow ]" action="./blatte/" method="get" is="quiz-element" autocomplete="off" data-results="[&quot;Li9ibGF0dGUv&quot;,&quot;Li9ibG9iZmlzaC8=&quot;,&quot;Li9jaGV2cmUv&quot;]">
-    <fieldset class="[ slider_item ]" data-slide>
-      <legend>
-        Quelle est votre activité préférée le week-end ?
-      </legend>
-<label class="radio-control" for="0-0" >
+  <header class="header">
+    <div class="header_left">
+      <a > le site</a>
+    </div>
+<button
+      class="theme-switch"
+      id="theme-switch"
+      title="Toggles light & dark"
+      aria-label="auto"
+      aria-live="polite"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        class="theme-switch_icon moon"
+        aria-hidden="true"
+      >
+        <mask id="moonMask" class="mask">
+          <rect x="0" y="0" width="100" height="100" fill="white" />
+          <circle cx="60" cy="53" r="20" fill="black" class="mask_circle" />
+        </mask>
+        <circle
+          cx="50"
+          cy="50"
+          r="25"
+          fill="currentColor"
+          stroke="none"
+          mask="url(#moonMask)"
+          class="circle"
+        />
+        <g
+          stroke-width="8"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M 95 50 Q 91.54896233856422 45.907784391240845 88.5 50 T 82 50"
+            class="sunray"
+            style="--_index: 0; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 81.81980515339464 81.81980515339464 Q 76.4859196138322 82.27318642789427 77.22361107568209 77.22361107568207 T 72.62741699796952 72.62741699796952"
+            class="sunray"
+            style="--_index: 1; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 50 95 Q 54.09221560875916 91.54896233856422 50 88.5 T 50 82"
+            class="sunray"
+            style="--_index: 2; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 18.180194846605364 81.81980515339464 Q 17.726813572105733 76.4859196138322 22.776388924317924 77.22361107568209 T 27.37258300203048 72.62741699796952"
+            class="sunray"
+            style="--_index: 3; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 5 50.00000000000001 Q 8.451037661435784 54.09221560875916 11.5 50.00000000000001 T 18 50.00000000000001"
+            class="sunray"
+            style="--_index: 4; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 18.180194846605353 18.180194846605364 Q 23.514080386167784 17.726813572105748 22.776388924317914 22.776388924317924 T 27.372583002030474 27.37258300203048"
+            class="sunray"
+            style="--_index: 5; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 49.99999999999999 5 Q 45.90778439124085 8.451037661435777 49.99999999999999 11.5 T 49.99999999999999 18"
+            class="sunray"
+            style="--_index: 6; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 81.81980515339463 18.180194846605353 Q 82.27318642789425 23.514080386167784 77.22361107568207 22.776388924317914 T 72.62741699796952 27.372583002030474"
+            class="sunray"
+            style="--_index: 7; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 95 49.999999999999986 Q 91.54896233856422 45.90778439124085 88.5 49.99999999999999 T 82 49.99999999999999"
+            class="sunray"
+            style="--_index: 8; --_length: 15.8916"
+          ></path>
+        </g>
+      </svg>
+    </button>
+  </header>
+<main class="quiz-page wrapper flow-5">
+  <h1 class="fade-in animation-delay-1 text-center margin-block-end-5 padding-block-5">Quel animal êtes vous ?</h1>
+  <div class="fade-in animation-delay-0 ">
+    <form class="" action="./blatte/" method="get" is="quiz-element" autocomplete="off"
+      data-results="[&quot;Li9ibGF0dGUv&quot;,&quot;Li9ibG9iZmlzaC8=&quot;,&quot;Li9jaGV2cmUv&quot;]">
+      <div class="[ quiz ] [ flow-5 ]">
+
+        <fieldset class="[ radio-pilles ]" data-slide>
+          <legend>
+            Quelle est votre activité préférée le week-end ?
+          </legend>
+<label class="radio-pilles_item" for="0-0">
 	<input type="radio" name="0" id="0-0" value="1" required="true" />
-	<span>
-		Explorer la nature.
-	</span>
-  </label>
-<label class="radio-control" for="0-1" >
+	<div>
+		<span>
+			Explorer la nature.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="0-1">
 	<input type="radio" name="0" id="0-1" value="0" required="true" />
-	<span>
-		Sortir en ville avec des amis.
-	</span>
-  </label>
-<label class="radio-control" for="0-2" >
+	<div>
+		<span>
+			Sortir en ville avec des amis.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="0-2">
 	<input type="radio" name="0" id="0-2" value="2" required="true" />
-	<span>
-		Rester chez soit et se détendre.
-	</span>
-  </label>
-    </fieldset>
-    <fieldset class="[ slider_item ]" data-slide>
-      <legend>
-        Quel est votre plat préféré ?
-      </legend>
-<label class="radio-control" for="1-0" >
+	<div>
+		<span>
+			Rester chez soit et se détendre.
+		</span>
+	</div>
+</label>
+      </fieldset>
+        <fieldset class="[ radio-pilles ]" data-slide>
+          <legend>
+            Quel est votre plat préféré ?
+          </legend>
+<label class="radio-pilles_item" for="1-0">
 	<input type="radio" name="1" id="1-0" value="0" required="true" />
-	<span>
-		Pizza
-	</span>
-  </label>
-<label class="radio-control" for="1-1" >
-	<input type="radio" name="1" id="1-1" value="1" required="true" />
-	<span>
-		Fruits de mer
-	</span>
-  </label>
-<label class="radio-control" for="1-2" >
-	<input type="radio" name="1" id="1-2" value="2" required="true" />
-	<span>
-		le Welsh
-	</span>
-  </label>
-    </fieldset>
-    <fieldset class="[ slider_item ]" data-slide>
-      <legend>
-        Quelle est la première chose que vous faites au réveil ?
-      </legend>
-<label class="radio-control" for="2-0" >
-	<input type="radio" name="2" id="2-0" value="1" required="true" />
-	<span>
-		Je vérifie mon téléphone.
-	</span>
-  </label>
-<label class="radio-control" for="2-1" >
-	<input type="radio" name="2" id="2-1" value="0" required="true" />
-	<span>
-		Je me rendors.
-	</span>
-  </label>
-<label class="radio-control" for="2-2" >
+	<div>
+		<span>
+			Pizza
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="1-1">
+	<input type="radio" name="1" id="1-1" value="2" required="true" />
+	<div>
+		<span>
+			le Welsh
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="1-2">
+	<input type="radio" name="1" id="1-2" value="1" required="true" />
+	<div>
+		<span>
+			Fruits de mer
+		</span>
+	</div>
+</label>
+      </fieldset>
+        <fieldset class="[ radio-pilles ]" data-slide>
+          <legend>
+            Quelle est la première chose que vous faites au réveil ?
+          </legend>
+<label class="radio-pilles_item" for="2-0">
+	<input type="radio" name="2" id="2-0" value="0" required="true" />
+	<div>
+		<span>
+			Je me rendors.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="2-1">
+	<input type="radio" name="2" id="2-1" value="1" required="true" />
+	<div>
+		<span>
+			Je vérifie mon téléphone.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="2-2">
 	<input type="radio" name="2" id="2-2" value="2" required="true" />
-	<span>
-		Je mange
-	</span>
-  </label>
-    </fieldset>
-    <fieldset class="[ slider_item ]" data-slide>
-      <legend>
-        Est-ce que vous êtes plutôt...
-      </legend>
-<label class="radio-control" for="3-0" >
-	<input type="radio" name="3" id="3-0" value="2" required="true" />
-	<span>
-		de la nuit ?
-	</span>
-  </label>
-<label class="radio-control" for="3-1" >
-	<input type="radio" name="3" id="3-1" value="1" required="true" />
-	<span>
-		de l&#x27;après-midi ?
-	</span>
-  </label>
-<label class="radio-control" for="3-2" >
-	<input type="radio" name="3" id="3-2" value="0" required="true" />
-	<span>
-		du matin ?
-	</span>
-  </label>
-    </fieldset>
-    <fieldset class="[ slider_item ]" data-slide>
-      <legend>
-        Face à un problème quelle est votre réaction ?
-      </legend>
-<label class="radio-control" for="4-0" >
-	<input type="radio" name="4" id="4-0" value="1" required="true" />
-	<span>
-		Trouver une solution.
-	</span>
-  </label>
-<label class="radio-control" for="4-1" >
+	<div>
+		<span>
+			Je mange
+		</span>
+	</div>
+</label>
+      </fieldset>
+        <fieldset class="[ radio-pilles ]" data-slide>
+          <legend>
+            Est-ce que vous êtes plutôt...
+          </legend>
+<label class="radio-pilles_item" for="3-0">
+	<input type="radio" name="3" id="3-0" value="0" required="true" />
+	<div>
+		<span>
+			du matin ?
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="3-1">
+	<input type="radio" name="3" id="3-1" value="2" required="true" />
+	<div>
+		<span>
+			de la nuit ?
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="3-2">
+	<input type="radio" name="3" id="3-2" value="1" required="true" />
+	<div>
+		<span>
+			de l&#x27;après-midi ?
+		</span>
+	</div>
+</label>
+      </fieldset>
+        <fieldset class="[ radio-pilles ]" data-slide>
+          <legend>
+            Face à un problème quelle est votre réaction ?
+          </legend>
+<label class="radio-pilles_item" for="4-0">
+	<input type="radio" name="4" id="4-0" value="2" required="true" />
+	<div>
+		<span>
+			Partir en courant.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="4-1">
 	<input type="radio" name="4" id="4-1" value="0" required="true" />
-	<span>
-		Manger tout ce qui traine.
-	</span>
-  </label>
-<label class="radio-control" for="4-2" >
-	<input type="radio" name="4" id="4-2" value="2" required="true" />
-	<span>
-		Partir en courant.
-	</span>
-  </label>
-    </fieldset>
-    <fieldset class="[ slider_item ]" data-slide>
-      <legend>
-        Que préférez vous faire le 31 décembre ?
-      </legend>
-<label class="radio-control" for="5-0" >
-	<input type="radio" name="5" id="5-0" value="1" required="true" />
-	<span>
-		Cinq flasques de William-Peel et c&#x27;est partit pour la nuit.
-	</span>
-  </label>
-<label class="radio-control" for="5-1" >
-	<input type="radio" name="5" id="5-1" value="2" required="true" />
-	<span>
-		Ça dépend.
-	</span>
-  </label>
-<label class="radio-control" for="5-2" >
+	<div>
+		<span>
+			Manger tout ce qui traine.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="4-2">
+	<input type="radio" name="4" id="4-2" value="1" required="true" />
+	<div>
+		<span>
+			Trouver une solution.
+		</span>
+	</div>
+</label>
+      </fieldset>
+        <fieldset class="[ radio-pilles ]" data-slide>
+          <legend>
+            Que préférez vous faire le 31 décembre ?
+          </legend>
+<label class="radio-pilles_item" for="5-0">
+	<input type="radio" name="5" id="5-0" value="2" required="true" />
+	<div>
+		<span>
+			Ça dépend.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="5-1">
+	<input type="radio" name="5" id="5-1" value="1" required="true" />
+	<div>
+		<span>
+			Cinq flasques de William-Peel et c&#x27;est partit pour la nuit.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="5-2">
 	<input type="radio" name="5" id="5-2" value="0" required="true" />
-	<span>
-		Un bon dîner : huître, champagne...
-	</span>
-  </label>
-    </fieldset>
-    <fieldset class="[ slider_item ]" data-slide>
-      <legend>
-        Quelles fleurs préférez vous ?
-      </legend>
-<label class="radio-control" for="6-0" >
-	<input type="radio" name="6" id="6-0" value="1" required="true" />
-	<span>
-		Les roses Trèmières.
-	</span>
-  </label>
-<label class="radio-control" for="6-1" >
-	<input type="radio" name="6" id="6-1" value="0" required="true" />
-	<span>
-		Les crysanthèmes.
-	</span>
-  </label>
-<label class="radio-control" for="6-2" >
+	<div>
+		<span>
+			Un bon dîner : huître, champagne...
+		</span>
+	</div>
+</label>
+      </fieldset>
+        <fieldset class="[ radio-pilles ]" data-slide>
+          <legend>
+            Quelles fleurs préférez vous ?
+          </legend>
+<label class="radio-pilles_item" for="6-0">
+	<input type="radio" name="6" id="6-0" value="0" required="true" />
+	<div>
+		<span>
+			Les crysanthèmes.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="6-1">
+	<input type="radio" name="6" id="6-1" value="1" required="true" />
+	<div>
+		<span>
+			Les roses Trèmières.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="6-2">
 	<input type="radio" name="6" id="6-2" value="2" required="true" />
-	<span>
-		Celles qui croisent votre chemin.
-	</span>
-  </label>
-    </fieldset>
-    <fieldset class="[ slider_item ]" data-slide>
-      <legend>
-        Pour vous dormir...
-      </legend>
-<label class="radio-control" for="7-0" >
+	<div>
+		<span>
+			Celles qui croisent votre chemin.
+		</span>
+	</div>
+</label>
+      </fieldset>
+        <fieldset class="[ radio-pilles ]" data-slide>
+          <legend>
+            Pour vous dormir...
+          </legend>
+<label class="radio-pilles_item" for="7-0">
 	<input type="radio" name="7" id="7-0" value="2" required="true" />
-	<span>
-		une nécessité.
-	</span>
-  </label>
-<label class="radio-control" for="7-1" >
+	<div>
+		<span>
+			une nécessité.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="7-1">
 	<input type="radio" name="7" id="7-1" value="1" required="true" />
-	<span>
-		une perte de temps.
-	</span>
-  </label>
-<label class="radio-control" for="7-2" >
+	<div>
+		<span>
+			une perte de temps.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="7-2">
 	<input type="radio" name="7" id="7-2" value="0" required="true" />
-	<span>
-		c&#x27;est le meilleur moment de la journée.
-	</span>
-  </label>
-    </fieldset>
-    <fieldset class="[ slider_item ]" data-slide>
-      <legend>
-        À votre avis si les poules avaient des dents... 
-      </legend>
-<label class="radio-control" for="8-0" >
+	<div>
+		<span>
+			c&#x27;est le meilleur moment de la journée.
+		</span>
+	</div>
+</label>
+      </fieldset>
+        <fieldset class="[ radio-pilles ]" data-slide>
+          <legend>
+            À votre avis si les poules avaient des dents... 
+          </legend>
+<label class="radio-pilles_item" for="8-0">
 	<input type="radio" name="8" id="8-0" value="1" required="true" />
-	<span>
-		elles auraient besoin d&#x27;un dentiste.
-	</span>
-  </label>
-<label class="radio-control" for="8-1" >
+	<div>
+		<span>
+			elles auraient besoin d&#x27;un dentiste.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="8-1">
 	<input type="radio" name="8" id="8-1" value="2" required="true" />
-	<span>
-		Paris serait dans une bouteille.
-	</span>
-  </label>
-<label class="radio-control" for="8-2" >
+	<div>
+		<span>
+			Paris serait dans une bouteille.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="8-2">
 	<input type="radio" name="8" id="8-2" value="0" required="true" />
-	<span>
-		elles mangeraient du poulet.
-	</span>
-  </label>
-    </fieldset>
-    <fieldset class="[ slider_item ]" data-slide>
-      <legend>
-        Être bizarre c&#x27;est...
-      </legend>
-<label class="radio-control" for="9-0" >
+	<div>
+		<span>
+			elles mangeraient du poulet.
+		</span>
+	</div>
+</label>
+      </fieldset>
+        <fieldset class="[ radio-pilles ]" data-slide>
+          <legend>
+            Être bizarre c&#x27;est...
+          </legend>
+<label class="radio-pilles_item" for="9-0">
 	<input type="radio" name="9" id="9-0" value="0" required="true" />
-	<span>
-		normal.
-	</span>
-  </label>
-<label class="radio-control" for="9-1" >
+	<div>
+		<span>
+			normal.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="9-1">
 	<input type="radio" name="9" id="9-1" value="1" required="true" />
-	<span>
-		bizarre.
-	</span>
-  </label>
-<label class="radio-control" for="9-2" >
+	<div>
+		<span>
+			bizarre.
+		</span>
+	</div>
+</label>
+<label class="radio-pilles_item" for="9-2">
 	<input type="radio" name="9" id="9-2" value="2" required="true" />
-	<span>
-		effarent. 
-	</span>
-  </label>
-    </fieldset>
-    <input type="submit" value="Valider" />
-  </form>
-</div>
+	<div>
+		<span>
+			effarent. 
+		</span>
+	</div>
+</label>
+      </fieldset>
+    </div>
+      <button class="button" data-type="dashed">
+        <svg >
+          <rect pathLength="100" />
+        </svg>
+        <span>
+        Valider
+        </span>
+      </button>
+    </form>
+  </div>
 </main>
   <footer>© 2023 - Colin Maillard</footer>
   

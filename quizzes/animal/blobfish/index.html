@@ -5,13 +5,99 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="/quiz/scripts/theme-switch.js"></script>
   <title>blobfish</title>
-  <script type="module" crossorigin src="/quiz/assets/main-8fafc6b2.js"></script>
-  <link rel="stylesheet" href="/quiz/assets/main-4cdd98ea.css">
+  <script type="module" crossorigin src="/quiz/assets/main-5484d426.js"></script>
+  <link rel="stylesheet" href="/quiz/assets/main-ea36b8cf.css">
 </head>
 
 <body>
-  <header class="box-shadow-1">header</header>
+  <header class="header">
+    <div class="header_left">
+      <a > le site</a>
+    </div>
+<button
+      class="theme-switch"
+      id="theme-switch"
+      title="Toggles light & dark"
+      aria-label="auto"
+      aria-live="polite"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        class="theme-switch_icon moon"
+        aria-hidden="true"
+      >
+        <mask id="moonMask" class="mask">
+          <rect x="0" y="0" width="100" height="100" fill="white" />
+          <circle cx="60" cy="53" r="20" fill="black" class="mask_circle" />
+        </mask>
+        <circle
+          cx="50"
+          cy="50"
+          r="25"
+          fill="currentColor"
+          stroke="none"
+          mask="url(#moonMask)"
+          class="circle"
+        />
+        <g
+          stroke-width="8"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M 95 50 Q 91.54896233856422 45.907784391240845 88.5 50 T 82 50"
+            class="sunray"
+            style="--_index: 0; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 81.81980515339464 81.81980515339464 Q 76.4859196138322 82.27318642789427 77.22361107568209 77.22361107568207 T 72.62741699796952 72.62741699796952"
+            class="sunray"
+            style="--_index: 1; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 50 95 Q 54.09221560875916 91.54896233856422 50 88.5 T 50 82"
+            class="sunray"
+            style="--_index: 2; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 18.180194846605364 81.81980515339464 Q 17.726813572105733 76.4859196138322 22.776388924317924 77.22361107568209 T 27.37258300203048 72.62741699796952"
+            class="sunray"
+            style="--_index: 3; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 5 50.00000000000001 Q 8.451037661435784 54.09221560875916 11.5 50.00000000000001 T 18 50.00000000000001"
+            class="sunray"
+            style="--_index: 4; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 18.180194846605353 18.180194846605364 Q 23.514080386167784 17.726813572105748 22.776388924317914 22.776388924317924 T 27.372583002030474 27.37258300203048"
+            class="sunray"
+            style="--_index: 5; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 49.99999999999999 5 Q 45.90778439124085 8.451037661435777 49.99999999999999 11.5 T 49.99999999999999 18"
+            class="sunray"
+            style="--_index: 6; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 81.81980515339463 18.180194846605353 Q 82.27318642789425 23.514080386167784 77.22361107568207 22.776388924317914 T 72.62741699796952 27.372583002030474"
+            class="sunray"
+            style="--_index: 7; --_length: 15.8916"
+          ></path>
+          <path
+            d="M 95 49.999999999999986 Q 91.54896233856422 45.90778439124085 88.5 49.99999999999999 T 82 49.99999999999999"
+            class="sunray"
+            style="--_index: 8; --_length: 15.8916"
+          ></path>
+        </g>
+      </svg>
+    </button>
+  </header>
 <main class="quiz-result">
 		<section class="[ banner ] [ fade-in animation-delay-1 ]" style='--bg-img:url("/quiz/images/uploads/blobfish.jpg");'>
 			<h1 class="[ font-size-5 slide-in-wrapper color-text-1 padding-inline--1 text-center animation-delay-2 fade-in ]"><span class="">Vous êtes un blobfish.</span></h1>
